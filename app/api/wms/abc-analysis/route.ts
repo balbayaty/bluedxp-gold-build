@@ -7,7 +7,7 @@
 
 import { NextRequest, NextResponse } from "next/server";
 import { aiAnalyticsService } from "@/lib/services/wms/aiAnalyticsService";
-import { InventoryService } from "@/lib/services/wms/InventoryService";
+import { InventoryService } from "@/lib/services/wms/inventoryService";
 import { prisma } from "@/lib/services/database/prismaClient";
 import { withAPIGateway } from "@/middleware/apiGateway";
 import type { APIRequestContext } from "@/middleware/apiPermissions";

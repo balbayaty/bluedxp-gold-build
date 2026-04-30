@@ -6,7 +6,7 @@
  */
 
 import { NextRequest, NextResponse } from "next/server";
-import { InventoryService } from "@/lib/services/wms/InventoryService";
+import { InventoryService } from "@/lib/services/wms/inventoryService";
 import { MaterialService } from "@/lib/services/wms/MaterialService";
 import { prisma } from "@/lib/services/database/prismaClient";
 import { withAPIGateway } from "@/middleware/apiGateway";

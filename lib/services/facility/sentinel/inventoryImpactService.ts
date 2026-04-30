@@ -1,7 +1,7 @@
 import {
   InventoryService,
   StockOverviewItem,
-} from "@/lib/services/wms/InventoryService";
+} from "@/lib/services/wms/inventoryService";
 
 export interface ImpactedBatch {
   sku: string;
