@@ -1,5 +1,5 @@
 import { prisma } from "../database/prismaClient";
-import { InventoryService } from "./InventoryService";
+import { InventoryService } from "./inventoryService";
 import type {
   CycleCount,
   CycleCountTask,
