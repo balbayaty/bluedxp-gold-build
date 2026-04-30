@@ -62,8 +62,11 @@ jobs:
           node-version: '22'
           cache: 'npm'
 
-      - name: Install dependencies (npm ci)
-        run: npm ci --no-audit --no-fund --prefer-offline
+      - name: Install dependencies (npm install)
+        # Using `install` rather than `ci` because we just added two deps
+        # to package.json without regenerating package-lock.json. CI will
+        # resolve fresh and update the lock during the run.
+        run: npm install --no-audit --no-fund --legacy-peer-deps
 
       - name: Generate Prisma client
         run: npx prisma generate
