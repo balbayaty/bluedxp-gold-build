@@ -1,0 +1,229 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "BlueDXP Platform API",
+    "version": "1.0.0",
+    "description": "Enterprise Intelligence Operating System - Complete API Documentation",
+    "contact": {
+      "name": "BlueDXP Support",
+      "email": "support@bluedxp.com"
+    }
+  },
+  "servers": [
+    {
+      "url": "http://localhost:3002",
+      "description": "Development server"
+    },
+    {
+      "url": "https://api.bluedxp.com",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/api/health": {
+      "get": {
+        "summary": "Health Check",
+        "description": "Returns health status of all services",
+        "responses": {
+          "200": {
+            "description": "Healthy",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HealthResponse"
+                }
+              }
+            }
+          },
+          "503": {
+            "description": "Unhealthy"
+          }
+        }
+      }
+    },
+    "/api/metrics": {
+      "get": {
+        "summary": "Prometheus Metrics",
+        "description": "Returns metrics in Prometheus format",
+        "responses": {
+          "200": {
+            "description": "Metrics",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/v1/licensing": {
+      "get": {
+        "summary": "Validate License",
+        "parameters": [
+          {
+            "name": "tenantId",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" }
+          },
+          {
+            "name": "moduleId",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "License validation result"
+          }
+        }
+      },
+      "post": {
+        "summary": "License Operations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LicenseRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Operation successful"
+          }
+        }
+      }
+    },
+    "/api/v1/pricing": {
+      "get": {
+        "summary": "Get Active Subscription",
+        "parameters": [
+          {
+            "name": "tenantId",
+            "in": "query",
+            "required": true,
+            "schema": { "type": "string" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Subscription details"
+          }
+        }
+      },
+      "post": {
+        "summary": "Pricing Operations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/PricingRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Operation successful"
+          }
+        }
+      }
+    },
+    "/api/saudi-government": {
+      "post": {
+        "summary": "Saudi Government API",
+        "description": "Unified endpoint for all Saudi government agency integrations",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SaudiGovRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "API response"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "HealthResponse": {
+        "type": "object",
+        "properties": {
+          "status": { "type": "string" },
+          "timestamp": { "type": "string", "format": "date-time" },
+          "services": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "object"
+            }
+          }
+        }
+      },
+      "LicenseRequest": {
+        "type": "object",
+        "required": ["action"],
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": ["validate", "checkFeature", "upsert", "revoke", "list"]
+          },
+          "tenantId": { "type": "string" },
+          "moduleId": { "type": "string" },
+          "feature": { "type": "string" },
+          "licenseKey": { "type": "string" }
+        }
+      },
+      "PricingRequest": {
+        "type": "object",
+        "required": ["action"],
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": ["calculate", "createSubscription", "cancel", "renew", "generateInvoice"]
+          },
+          "tenantId": { "type": "string" },
+          "planId": { "type": "string" },
+          "subscriptionId": { "type": "string" }
+        }
+      },
+      "SaudiGovRequest": {
+        "type": "object",
+        "required": ["agency", "action"],
+        "properties": {
+          "agency": {
+            "type": "string",
+            "enum": ["tga", "mot", "absher", "nafath", "saber", "sfda", "zatca", "sama", "ncsc", "sdaia", "saso", "modon", "moc", "moi", "momra", "misa", "citc"]
+          },
+          "action": { "type": "string" }
+        }
+      }
+    },
+    "securitySchemes": {
+      "bearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "security": [
+    {
+      "bearerAuth": []
+    }
+  ]
+}

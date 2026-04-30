@@ -1,0 +1,361 @@
+{
+  "counts": {
+    "totalPages": 542,
+    "totalRoutes": 542,
+    "staticRoutes": 513,
+    "navHrefs": 383,
+    "orphans": 132
+  },
+  "byGroup": {
+    "transportation": [
+      "/transportation/analytics/digital-twins",
+      "/transportation/analytics/scenario",
+      "/transportation/audit",
+      "/transportation/blockchain",
+      "/transportation/carrier-portal",
+      "/transportation/carriers",
+      "/transportation/collaboration",
+      "/transportation/compliance",
+      "/transportation/control-tower",
+      "/transportation/corridors",
+      "/transportation/customization",
+      "/transportation/digital-twins",
+      "/transportation/edge-computing",
+      "/transportation/emissions",
+      "/transportation/exports",
+      "/transportation/fleet",
+      "/transportation/incidents",
+      "/transportation/intelligent-routing",
+      "/transportation/iot",
+      "/transportation/load-matching",
+      "/transportation/multi-enterprise",
+      "/transportation/payments",
+      "/transportation/pricing",
+      "/transportation/psychology",
+      "/transportation/quantum",
+      "/transportation/quotes",
+      "/transportation/route-comparison",
+      "/transportation/scenario-simulation",
+      "/transportation/test"
+    ],
+    "ai-vision": [
+      "/ai-vision/history/history",
+      "/ai-vision/integration/actions",
+      "/ai-vision/integration/map",
+      "/ai-vision/integration/settings",
+      "/ai-vision/integration/workflows",
+      "/ai-vision/learning/accuracy",
+      "/ai-vision/learning/feedback",
+      "/ai-vision/learning/how-it-works",
+      "/ai-vision/learning",
+      "/ai-vision/learning/patterns",
+      "/ai-vision/learning/rules",
+      "/ai-vision-demo",
+      "/ai-vision-unified-enhanced"
+    ],
+    "marketplace": [
+      "/marketplace/analytics",
+      "/marketplace/compare",
+      "/marketplace/contracts",
+      "/marketplace/favorites",
+      "/marketplace/forecasting",
+      "/marketplace/listings/new",
+      "/marketplace/messages",
+      "/marketplace/payment",
+      "/marketplace/providers/verify",
+      "/marketplace/sustainability"
+    ],
+    "dashboard-routes": [
+      "/dashboard/account-manager",
+      "/dashboard/business-development",
+      "/dashboard/customer",
+      "/dashboard/operations",
+      "/dashboard",
+      "/dashboard/supervisor",
+      "/dashboard/system-admin",
+      "/dashboard/transport-general-manager",
+      "/dashboard/warehouse-head"
+    ],
+    "liability": [
+      "/liability/assessments",
+      "/liability/calculator",
+      "/liability/claims/new",
+      "/liability/claims",
+      "/liability/compliance",
+      "/liability/dashboard",
+      "/liability/rules/new",
+      "/liability/rules"
+    ],
+    "crm": [
+      "/crm/accounts",
+      "/crm/activities",
+      "/crm/contacts",
+      "/crm/dashboard",
+      "/crm/forecast",
+      "/crm/leads",
+      "/crm/opportunities"
+    ],
+    "ict-hardware-ecosystem": [
+      "/ict-hardware-ecosystem/manufacturing",
+      "/ict-hardware-ecosystem",
+      "/ict-hardware-ecosystem/partnerships",
+      "/ict-hardware-ecosystem/products"
+    ],
+    "proposals": [
+      "/proposals/analytics/enhanced",
+      "/proposals/compare",
+      "/proposals/enhanced",
+      "/proposals/marketplace"
+    ],
+    "qhse": [
+      "/qhse/comprehensive",
+      "/qhse/incidents/new",
+      "/qhse/inspections/new",
+      "/qhse/training/new"
+    ],
+    "business-intelligence": [
+      "/business-intelligence/dashboard",
+      "/business-intelligence/data-warehouse",
+      "/business-intelligence/reports"
+    ],
+    "facility": [
+      "/facility/utility-bills/analytics",
+      "/facility/utility-bills/comparison",
+      "/facility/utility-bills"
+    ],
+    "truth-engine": [
+      "/truth-engine/claims",
+      "/truth-engine/dashboard",
+      "/truth-engine/knowledge-graph"
+    ],
+    "customer-portal": [
+      "/customer-portal/approval-success",
+      "/customer-portal/approve"
+    ],
+    "digital-signatures": [
+      "/digital-signatures/dashboard",
+      "/digital-signatures/documents"
+    ],
+    "jobs": [
+      "/jobs/analytics",
+      "/jobs/quick-start"
+    ],
+    "pulse": [
+      "/pulse/admin/redemptions",
+      "/pulse/admin/rulesets"
+    ],
+    "warehouse-network": [
+      "/warehouse-network/cross-docking",
+      "/warehouse-network/optimization"
+    ],
+    "bluedxp-test": [
+      "/bluedxp-test"
+    ],
+    "boardroom-readiness": [
+      "/boardroom-readiness"
+    ],
+    "brand-messaging": [
+      "/brand-messaging/test"
+    ],
+    "dashboards-short": [
+      "/d/sales-orders"
+    ],
+    "demo": [
+      "/demo/notifications"
+    ],
+    "feature-demo": [
+      "/feature-demo"
+    ],
+    "feature-registry": [
+      "/feature-registry"
+    ],
+    "integration": [
+      "/integration"
+    ],
+    "integrations": [
+      "/integrations/callback"
+    ],
+    "iot": [
+      "/iot/network/topology"
+    ],
+    "login": [
+      "/login"
+    ],
+    "maas": [
+      "/maas"
+    ],
+    "ncr": [
+      "/ncr"
+    ],
+    "page.tsx": [
+      "/page.tsx"
+    ],
+    "process-lifecycle": [
+      "/process-lifecycle/workflows/builder"
+    ],
+    "projects": [
+      "/projects"
+    ],
+    "purchase-orders": [
+      "/purchase-orders"
+    ],
+    "qhse-dashboard": [
+      "/qhse-dashboard"
+    ],
+    "settings": [
+      "/settings/currency"
+    ],
+    "task-management": [
+      "/task-management"
+    ],
+    "test-notifications": [
+      "/test-notifications"
+    ],
+    "test-page": [
+      "/test-page"
+    ],
+    "trade-compliance": [
+      "/trade-compliance/licenses/apply"
+    ],
+    "users": [
+      "/users"
+    ],
+    "websocket": [
+      "/websocket/streams"
+    ]
+  },
+  "orphans": [
+    "/ai-vision-demo",
+    "/ai-vision-unified-enhanced",
+    "/ai-vision/history/history",
+    "/ai-vision/integration/actions",
+    "/ai-vision/integration/map",
+    "/ai-vision/integration/settings",
+    "/ai-vision/integration/workflows",
+    "/ai-vision/learning",
+    "/ai-vision/learning/accuracy",
+    "/ai-vision/learning/feedback",
+    "/ai-vision/learning/how-it-works",
+    "/ai-vision/learning/patterns",
+    "/ai-vision/learning/rules",
+    "/bluedxp-test",
+    "/boardroom-readiness",
+    "/brand-messaging/test",
+    "/business-intelligence/dashboard",
+    "/business-intelligence/data-warehouse",
+    "/business-intelligence/reports",
+    "/crm/accounts",
+    "/crm/activities",
+    "/crm/contacts",
+    "/crm/dashboard",
+    "/crm/forecast",
+    "/crm/leads",
+    "/crm/opportunities",
+    "/customer-portal/approval-success",
+    "/customer-portal/approve",
+    "/d/sales-orders",
+    "/dashboard",
+    "/dashboard/account-manager",
+    "/dashboard/business-development",
+    "/dashboard/customer",
+    "/dashboard/operations",
+    "/dashboard/supervisor",
+    "/dashboard/system-admin",
+    "/dashboard/transport-general-manager",
+    "/dashboard/warehouse-head",
+    "/demo/notifications",
+    "/digital-signatures/dashboard",
+    "/digital-signatures/documents",
+    "/facility/utility-bills",
+    "/facility/utility-bills/analytics",
+    "/facility/utility-bills/comparison",
+    "/feature-demo",
+    "/feature-registry",
+    "/ict-hardware-ecosystem",
+    "/ict-hardware-ecosystem/manufacturing",
+    "/ict-hardware-ecosystem/partnerships",
+    "/ict-hardware-ecosystem/products",
+    "/integration",
+    "/integrations/callback",
+    "/iot/network/topology",
+    "/jobs/analytics",
+    "/jobs/quick-start",
+    "/liability/assessments",
+    "/liability/calculator",
+    "/liability/claims",
+    "/liability/claims/new",
+    "/liability/compliance",
+    "/liability/dashboard",
+    "/liability/rules",
+    "/liability/rules/new",
+    "/login",
+    "/maas",
+    "/marketplace/analytics",
+    "/marketplace/compare",
+    "/marketplace/contracts",
+    "/marketplace/favorites",
+    "/marketplace/forecasting",
+    "/marketplace/listings/new",
+    "/marketplace/messages",
+    "/marketplace/payment",
+    "/marketplace/providers/verify",
+    "/marketplace/sustainability",
+    "/ncr",
+    "/page.tsx",
+    "/process-lifecycle/workflows/builder",
+    "/projects",
+    "/proposals/analytics/enhanced",
+    "/proposals/compare",
+    "/proposals/enhanced",
+    "/proposals/marketplace",
+    "/pulse/admin/redemptions",
+    "/pulse/admin/rulesets",
+    "/purchase-orders",
+    "/qhse-dashboard",
+    "/qhse/comprehensive",
+    "/qhse/incidents/new",
+    "/qhse/inspections/new",
+    "/qhse/training/new",
+    "/settings/currency",
+    "/task-management",
+    "/test-notifications",
+    "/test-page",
+    "/trade-compliance/licenses/apply",
+    "/transportation/analytics/digital-twins",
+    "/transportation/analytics/scenario",
+    "/transportation/audit",
+    "/transportation/blockchain",
+    "/transportation/carrier-portal",
+    "/transportation/carriers",
+    "/transportation/collaboration",
+    "/transportation/compliance",
+    "/transportation/control-tower",
+    "/transportation/corridors",
+    "/transportation/customization",
+    "/transportation/digital-twins",
+    "/transportation/edge-computing",
+    "/transportation/emissions",
+    "/transportation/exports",
+    "/transportation/fleet",
+    "/transportation/incidents",
+    "/transportation/intelligent-routing",
+    "/transportation/iot",
+    "/transportation/load-matching",
+    "/transportation/multi-enterprise",
+    "/transportation/payments",
+    "/transportation/pricing",
+    "/transportation/psychology",
+    "/transportation/quantum",
+    "/transportation/quotes",
+    "/transportation/route-comparison",
+    "/transportation/scenario-simulation",
+    "/transportation/test",
+    "/truth-engine/claims",
+    "/truth-engine/dashboard",
+    "/truth-engine/knowledge-graph",
+    "/users",
+    "/warehouse-network/cross-docking",
+    "/warehouse-network/optimization",
+    "/websocket/streams"
+  ]
+}

@@ -1,0 +1,53 @@
+# Dockerfile for Event Bus Service (Express microservice)
+FROM node:20-alpine AS deps
+WORKDIR /app
+
+# Copy package files
+COPY package.json package-lock.json* ./
+
+# Install dependencies
+RUN npm ci --only=production && \
+    npm cache clean --force
+
+# Stage 2: Runner
+FROM node:20-alpine AS runner
+WORKDIR /app
+
+ENV NODE_ENV=production
+
+# Create non-root user
+RUN addgroup --system --gid 1001 nodejs && \
+    adduser --system --uid 1001 eventbus
+
+# Copy dependencies
+COPY --from=deps /app/node_modules ./node_modules
+
+# Copy event bus service
+COPY lib/services/event-bus ./lib/services/event-bus
+COPY package.json ./
+
+# Create logs directory
+RUN mkdir -p logs && \
+    chown -R eventbus:nodejs /app
+
+# Switch to non-root user
+USER eventbus
+
+# Expose port
+EXPOSE 3010
+
+ENV PORT=3010
+
+# Start the event bus service
+CMD ["node", "lib/services/event-bus/index.js"]
+
+
+
+
+
+
+
+
+
+
+

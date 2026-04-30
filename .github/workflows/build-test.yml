@@ -1,0 +1,110 @@
+name: Production Build Test
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: next build (production)
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+
+    env:
+      # Build-time placeholders. Real values would come from GitHub Secrets
+      # for actual deployment, but the build phase only needs them to be
+      # present (services lazy-init or fail-soft). Replace with secrets if
+      # the build needs to actually call these services.
+      NODE_OPTIONS: --max-old-space-size=6144
+      NEXT_TELEMETRY_DISABLED: "1"
+      NODE_ENV: production
+
+      # Database (real Neon URL from repo secret)
+      DATABASE_URL: ${{ secrets.DATABASE_URL }}
+      DIRECT_URL: ${{ secrets.DIRECT_URL }}
+      PGSSLMODE: require
+
+      # Redis disabled at build time (code falls back to in-memory)
+      REDIS_URL: ""
+      REDIS_DISABLED: "true"
+
+      # Module-load placeholders so route files don't throw on import
+      ERP_NEXT_URL: "https://placeholder.invalid"
+      ERP_NEXT_API_KEY: "build_placeholder_not_real_key"
+      ERP_NEXT_API_SECRET: "build_placeholder_not_real_secret"
+      BAYAN_QR_SECRET_KEY: "build_placeholder_32_char_secret_key_xx"
+      BOOTSTRAP_TENANT_ID: "default"
+
+      # Auth (placeholder - build only)
+      JWT_SECRET: "build_placeholder_jwt_secret_at_least_32_chars_long_xxxxx"
+      NEXTAUTH_SECRET: "build_placeholder_nextauth_secret_at_least_32_chars_xx"
+      NEXTAUTH_URL: "http://localhost:3000"
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Show runner specs
+        run: |
+          echo "=== Runner ==="
+          uname -a
+          echo "=== CPU ==="
+          nproc
+          echo "=== RAM ==="
+          free -h
+          echo "=== Disk ==="
+          df -h / | tail -n 1
+
+      - name: Setup Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies (npm ci)
+        run: npm ci --no-audit --no-fund --prefer-offline
+
+      - name: Generate Prisma client
+        run: npx prisma generate
+
+      - name: Disk and RAM before build
+        run: |
+          echo "=== Free RAM ==="
+          free -h
+          echo "=== Disk ==="
+          df -h /
+
+      - name: Run next build
+        id: build
+        run: |
+          set -o pipefail
+          npx next build 2>&1 | tee build.log
+
+      - name: Build artifacts summary (success path)
+        if: success()
+        run: |
+          echo "=== .next dir size ==="
+          du -sh .next || true
+          echo "=== Top 20 largest static files ==="
+          find .next -type f -printf "%s %p\n" 2>/dev/null | sort -rn | head -n 20 || true
+          echo "=== Build summary tail ==="
+          tail -n 100 build.log || true
+
+      - name: Build log analysis (failure path)
+        if: failure()
+        run: |
+          echo "=== Tail of build.log ==="
+          tail -n 200 build.log || true
+          echo ""
+          echo "=== Failure markers ==="
+          grep -nE "Failed|Error:|Build error|out of memory|FATAL" build.log | head -n 50 || true
+
+      - name: Upload build log
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log
+          path: build.log
+          retention-days: 14
+          if-no-files-found: ignore

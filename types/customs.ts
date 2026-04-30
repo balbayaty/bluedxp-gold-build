@@ -1,0 +1,719 @@
+/**
+ * Customs & Regulatory Integration Types
+ * Comprehensive type definitions for customs, TIR, touchpoints, and regulatory systems
+ * Enterprise-grade, aligned with international standards
+ */
+
+// ============================================================================
+// CORE ENUMS
+// ============================================================================
+
+export type CountryCode = 
+  | 'EG' // Egypt
+  | 'SA' // Saudi Arabia
+  | 'AE' // UAE
+  | 'KW' // Kuwait
+  | 'QA' // Qatar
+  | 'BH' // Bahrain
+  | 'OM' // Oman
+  | 'JO' // Jordan
+  | 'LB' // Lebanon
+
+export type CustomsDeclarationType = 
+  | 'IMPORT' 
+  | 'EXPORT' 
+  | 'TRANSIT' 
+  | 'TIR'
+  | 'REEXPORT'
+  | 'TEMPORARY_IMPORT'
+  | 'TEMPORARY_EXPORT'
+
+export type CustomsStatus = 
+  | 'DRAFT'
+  | 'SUBMITTED'
+  | 'UNDER_REVIEW'
+  | 'APPROVED'
+  | 'REJECTED'
+  | 'CLEARED'
+  | 'HELD'
+  | 'CANCELLED'
+
+export type TouchpointType = 
+  | 'BORDER'
+  | 'FACILITY'
+  | 'BONDED_WAREHOUSE'
+  | 'REGULATORY_OFFICE'
+  | 'INSPECTION_FACILITY'
+  | 'FREE_ZONE'
+
+export type BorderType = 
+  | 'LAND'
+  | 'SEA_PORT'
+  | 'AIRPORT'
+  | 'DRY_PORT'
+  | 'RAILWAY'
+
+export type DocumentType =
+  | 'COMMERCIAL_INVOICE'
+  | 'PACKING_LIST'
+  | 'BILL_OF_LADING'
+  | 'CERTIFICATE_OF_ORIGIN'
+  | 'PHYTOSANITARY_CERTIFICATE'
+  | 'VETERINARY_CERTIFICATE'
+  | 'HEALTH_CERTIFICATE'
+  | 'EXPORT_LICENSE'
+  | 'IMPORT_LICENSE'
+  | 'CUSTOMS_DECLARATION'
+  | 'TIR_CARNET'
+  | 'ACID_DECLARATION'
+  | 'OTHER'
+
+export type RegulatoryBodyType =
+  | 'CUSTOMS'
+  | 'FOOD_DRUG'
+  | 'STANDARDS'
+  | 'TRADE'
+  | 'ENVIRONMENT'
+  | 'HEALTH'
+  | 'AGRICULTURE'
+  | 'INDUSTRY'
+
+// ============================================================================
+// CUSTOMS DECLARATION
+// ============================================================================
+
+export interface CustomsDeclaration {
+  id: string
+  declarationNumber?: string
+  country: CountryCode
+  type: CustomsDeclarationType
+  status: CustomsStatus
+  
+  // Shipment Information
+  shipmentId: string
+  shipmentNumber?: string
+  
+  // Parties
+  importer: Party
+  exporter: Party
+  customsBroker?: Party
+  carrier?: Party
+  
+  // Touchpoints
+  originTouchpointId?: string
+  destinationTouchpointId?: string
+  currentTouchpointId?: string
+  
+  // Products
+  products: DeclarationProduct[]
+  totalValue: number
+  currency: string
+  
+  // Documents
+  documents: CustomsDocument[]
+  requiredDocuments: DocumentRequirement[]
+  missingDocuments: string[]
+  
+  // Financial
+  duties: Duty[]
+  fees: Fee[]
+  totalDuties: number
+  totalFees: number
+  totalAmount: number
+  
+  // Compliance
+  complianceScore?: number
+  riskLevel: 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL'
+  complianceIssues: ComplianceIssue[]
+  
+  // Regulatory
+  regulatoryApprovals: RegulatoryApproval[]
+  licenses: License[]
+  
+  // TIR (if applicable)
+  tirCarnetNumber?: string
+  tirStatus?: TIRStatus
+  
+  // ACID (Egypt)
+  acidNumber?: string
+  acidStatus?: ACIDStatus
+  
+  // Timeline
+  submittedAt?: Date
+  reviewedAt?: Date
+  approvedAt?: Date
+  clearedAt?: Date
+  estimatedClearanceDate?: Date
+  
+  // Metadata
+  notes?: string
+  tags: string[]
+  createdAt: Date
+  updatedAt: Date
+  createdBy: string
+  updatedBy?: string
+  
+  // Integration
+  externalIds: Record<string, string> // Country-specific IDs
+  integrationStatus: Record<string, IntegrationStatus>
+}
+
+export interface DeclarationProduct {
+  id: string
+  productId?: string
+  hsCode: string
+  description: string
+  quantity: number
+  unit: string
+  unitValue: number
+  totalValue: number
+  currency: string
+  originCountry: CountryCode
+  weight?: number
+  volume?: number
+  
+  // Regulatory
+  requiresLicense: boolean
+  licenseNumber?: string
+  requiresCertificate: boolean
+  certificateNumber?: string
+  
+  // Classification
+  productCategory?: string
+  restrictedItem: boolean
+  hazardousMaterial: boolean
+}
+
+export interface Party {
+  id?: string
+  name: string
+  type: 'INDIVIDUAL' | 'COMPANY'
+  taxId?: string
+  registrationNumber?: string
+  country: CountryCode
+  address: Address
+  contact: Contact
+}
+
+export interface Address {
+  street: string
+  city: string
+  state?: string
+  postalCode?: string
+  country: CountryCode
+  coordinates?: GeoCoordinates
+}
+
+export interface GeoCoordinates {
+  latitude: number
+  longitude: number
+}
+
+export interface Contact {
+  email?: string
+  phone?: string
+  fax?: string
+}
+
+// ============================================================================
+// DOCUMENTS
+// ============================================================================
+
+export interface CustomsDocument {
+  id: string
+  declarationId: string
+  type: DocumentType
+  name: string
+  fileUrl?: string
+  fileSize?: number
+  mimeType?: string
+  
+  // Status
+  status: 'PENDING' | 'UPLOADED' | 'VERIFIED' | 'REJECTED'
+  uploadedAt?: Date
+  verifiedAt?: Date
+  
+  // Validation
+  isValid: boolean
+  validationErrors: string[]
+  autoGenerated: boolean
+  
+  // Metadata
+  metadata: Record<string, any>
+  createdAt: Date
+  updatedAt: Date
+}
+
+export interface DocumentRequirement {
+  documentType: DocumentType
+  required: boolean
+  country: CountryCode
+  productCategory?: string
+  applicableTo: CustomsDeclarationType[]
+  description: string
+  templateUrl?: string
+  exampleUrl?: string
+}
+
+// ============================================================================
+// FINANCIAL
+// ============================================================================
+
+export interface Duty {
+  id: string
+  type: 'IMPORT_DUTY' | 'EXPORT_DUTY' | 'EXCISE_DUTY' | 'ANTI_DUMPING' | 'COUNTERVAILING'
+  rate: number // percentage or fixed amount
+  baseAmount: number
+  amount: number
+  currency: string
+  hsCode?: string
+  description?: string
+}
+
+export interface Fee {
+  id: string
+  type: 'CUSTOMS_FEE' | 'PROCESSING_FEE' | 'INSPECTION_FEE' | 'STORAGE_FEE' | 'OTHER'
+  description: string
+  amount: number
+  currency: string
+  required: boolean
+}
+
+// ============================================================================
+// COMPLIANCE
+// ============================================================================
+
+export interface ComplianceIssue {
+  id: string
+  severity: 'INFO' | 'WARNING' | 'ERROR' | 'CRITICAL'
+  category: 'DOCUMENT' | 'LICENSE' | 'REGULATORY' | 'VALUE' | 'CLASSIFICATION' | 'OTHER'
+  description: string
+  recommendation?: string
+  relatedField?: string
+  relatedDocumentId?: string
+}
+
+export interface RegulatoryApproval {
+  id: string
+  regulatoryBody: string
+  bodyType: RegulatoryBodyType
+  approvalType: 'LICENSE' | 'CERTIFICATE' | 'PERMIT' | 'AUTHORIZATION'
+  approvalNumber: string
+  status: 'PENDING' | 'APPROVED' | 'REJECTED' | 'EXPIRED'
+  validFrom?: Date
+  validTo?: Date
+  required: boolean
+}
+
+export interface License {
+  id: string
+  type: string
+  number: string
+  issuingAuthority: string
+  country: CountryCode
+  validFrom: Date
+  validTo: Date
+  status: 'ACTIVE' | 'EXPIRED' | 'SUSPENDED' | 'REVOKED'
+  products?: string[] // Applicable products/HS codes
+}
+
+// ============================================================================
+// TIR/ETIR
+// ============================================================================
+
+export interface TIRCarnet {
+  id: string
+  carnetNumber: string
+  issuingCountry: CountryCode
+  issuingAssociation: string
+  holder: Party
+  vehicle: Vehicle
+  
+  // Validity
+  validFrom: Date
+  validTo: Date
+  status: TIRStatus
+  
+  // Guarantee
+  guarantee: TIRGuarantee
+  
+  // Borders
+  borders: TIRBorderCrossing[]
+  currentBorder?: string
+  
+  // Products
+  products: DeclarationProduct[]
+  
+  // Documents
+  documents: CustomsDocument[]
+  
+  // Timeline
+  issuedAt: Date
+  startedAt?: Date
+  completedAt?: Date
+  closedAt?: Date
+  
+  // Metadata
+  notes?: string
+  createdAt: Date
+  updatedAt: Date
+}
+
+export type TIRStatus = 
+  | 'ISSUED'
+  | 'ACTIVE'
+  | 'IN_TRANSIT'
+  | 'COMPLETED'
+  | 'CLOSED'
+  | 'CANCELLED'
+  | 'SUSPENDED'
+
+export interface TIRGuarantee {
+  guaranteeNumber: string
+  issuingAssociation: string
+  amount: number
+  currency: string
+  validFrom: Date
+  validTo: Date
+  status: 'ACTIVE' | 'CLAIMED' | 'RELEASED' | 'EXPIRED'
+}
+
+export interface TIRBorderCrossing {
+  id: string
+  borderId: string
+  borderName: string
+  country: CountryCode
+  sequence: number
+  type: 'DEPARTURE' | 'TRANSIT' | 'ARRIVAL'
+  status: 'PENDING' | 'IN_PROGRESS' | 'COMPLETED' | 'REJECTED'
+  enteredAt?: Date
+  exitedAt?: Date
+  processingTime?: number // minutes
+  notes?: string
+}
+
+export interface Vehicle {
+  registrationNumber: string
+  country: CountryCode
+  type: 'TRUCK' | 'TRAILER' | 'CONTAINER'
+  make?: string
+  model?: string
+  year?: number
+}
+
+// ============================================================================
+// ACID (Egypt)
+// ============================================================================
+
+export type ACIDStatus = 
+  | 'PENDING'
+  | 'SUBMITTED'
+  | 'UNDER_REVIEW'
+  | 'APPROVED'
+  | 'REJECTED'
+  | 'CANCELLED'
+
+export interface ACIDDeclaration {
+  id: string
+  acidNumber: string
+  declarationId: string
+  shipmentId: string
+  
+  // Parties
+  importer: Party
+  exporter: Party
+  
+  // Products
+  products: DeclarationProduct[]
+  
+  // Documents (via CargoX)
+  cargoxEnvelopeId?: string
+  documents: CustomsDocument[]
+  
+  // Status
+  status: ACIDStatus
+  submittedAt?: Date
+  approvedAt?: Date
+  
+  // Timeline
+  estimatedArrivalDate: Date
+  uploadedAt?: Date
+  
+  // Metadata
+  createdAt: Date
+  updatedAt: Date
+}
+
+// ============================================================================
+// TOUCHPOINTS
+// ============================================================================
+
+export interface Touchpoint {
+  id: string
+  code: string
+  name: string
+  nameLocal?: string
+  type: TouchpointType
+  country: CountryCode
+  
+  // Location
+  address: Address
+  coordinates: GeoCoordinates
+  
+  // Border-specific
+  borderType?: BorderType
+  connectedBorderId?: string // For paired borders
+  
+  // Capabilities
+  capabilities: TouchpointCapability[]
+  supportedTransportModes: TransportMode[]
+  supportedDeclarationTypes: CustomsDeclarationType[]
+  
+  // Operations
+  status: TouchpointStatus
+  operatingHours: OperatingHours
+  averageProcessingTime: ProcessingTime
+  
+  // Capacity
+  capacity: Capacity
+  currentUtilization: number // percentage
+  
+  // Requirements
+  requiredDocuments: DocumentRequirement[]
+  preferredPrograms?: string[] // AEO, Golden List, etc.
+  restrictions?: string[]
+  
+  // Contact
+  customsOffice?: string
+  phone?: string
+  email?: string
+  
+  // Performance
+  reliabilityScore: number // 0-100
+  congestionLevel: 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL'
+  
+  // Features
+  hasXRayScanning: boolean
+  hasWeighbridge: boolean
+  hasColdStorage: boolean
+  hasDangerousGoodsHandling: boolean
+  hasLivestockHandling: boolean
+  
+  // Metadata
+  notes?: string
+  lastUpdated: Date
+  createdAt: Date
+}
+
+export type TransportMode = 'ROAD' | 'SEA' | 'AIR' | 'RAIL' | 'MULTIMODAL'
+
+export interface TouchpointCapability {
+  type: string
+  description: string
+  available: boolean
+  capacity?: number
+}
+
+export type TouchpointStatus = 
+  | 'OPERATIONAL'
+  | 'LIMITED'
+  | 'CLOSED'
+  | 'MAINTENANCE'
+  | 'OVERLOADED'
+
+export interface OperatingHours {
+  monday?: TimeRange
+  tuesday?: TimeRange
+  wednesday?: TimeRange
+  thursday?: TimeRange
+  friday?: TimeRange
+  saturday?: TimeRange
+  sunday?: TimeRange
+  notes?: string
+}
+
+export interface TimeRange {
+  open: string // HH:mm
+  close: string // HH:mm
+}
+
+export interface ProcessingTime {
+  export: number // hours
+  import: number // hours
+  transit: number // hours
+  average: number // hours
+}
+
+export interface Capacity {
+  dailyVehicles?: number
+  dailyContainers?: number
+  storageCapacity?: number // square meters or cubic meters
+  currentLoad?: number
+}
+
+// ============================================================================
+// REGULATORY
+// ============================================================================
+
+export interface RegulatoryBody {
+  id: string
+  code: string
+  name: string
+  nameLocal?: string
+  type: RegulatoryBodyType
+  country: CountryCode
+  website?: string
+  apiEndpoint?: string
+  
+  // Integration
+  hasAPI: boolean
+  apiType?: 'REST' | 'SOAP' | 'EDI' | 'OTHER'
+  authenticationMethod?: 'API_KEY' | 'OAUTH2' | 'CERTIFICATE' | 'OTHER'
+  
+  // Services
+  services: RegulatoryService[]
+  
+  // Metadata
+  description?: string
+  lastUpdated: Date
+}
+
+export interface RegulatoryService {
+  id: string
+  name: string
+  description: string
+  endpoint?: string
+  method?: 'GET' | 'POST' | 'PUT' | 'DELETE'
+  requiresAuth: boolean
+  rateLimit?: RateLimit
+}
+
+export interface RateLimit {
+  requests: number
+  window: number // seconds
+}
+
+// ============================================================================
+// INTEGRATION
+// ============================================================================
+
+export interface IntegrationStatus {
+  system: string
+  status: 'CONNECTED' | 'DISCONNECTED' | 'ERROR' | 'PENDING'
+  lastSync?: Date
+  error?: string
+  retryCount?: number
+}
+
+// ============================================================================
+// ADAPTER INTERFACES
+// ============================================================================
+
+export interface CustomsAdapterConfig {
+  country: CountryCode
+  apiUrl: string
+  apiKey?: string
+  apiSecret?: string
+  username?: string
+  password?: string
+  certificatePath?: string
+  certificateKeyPath?: string
+  environment?: 'sandbox' | 'production'
+  timeout?: number
+  retryAttempts?: number
+  [key: string]: any
+}
+
+export interface CustomsAdapter {
+  readonly id: string
+  readonly name: string
+  readonly country: CountryCode
+  readonly type: 'CUSTOMS' | 'TIR' | 'REGULATORY'
+  
+  // Connection
+  connect(): Promise<void>
+  disconnect(): Promise<void>
+  isConnected(): Promise<boolean>
+  testConnection(): Promise<{ success: boolean; message: string }>
+  
+  // Declarations
+  submitDeclaration(declaration: Partial<CustomsDeclaration>): Promise<CustomsDeclaration>
+  getDeclaration(id: string): Promise<CustomsDeclaration | null>
+  getDeclarationStatus(id: string): Promise<CustomsStatus>
+  updateDeclaration(id: string, updates: Partial<CustomsDeclaration>): Promise<CustomsDeclaration>
+  cancelDeclaration(id: string): Promise<void>
+  
+  // Documents
+  uploadDocument(declarationId: string, document: Partial<CustomsDocument>): Promise<CustomsDocument>
+  getDocument(declarationId: string, documentId: string): Promise<CustomsDocument | null>
+  deleteDocument(declarationId: string, documentId: string): Promise<void>
+  
+  // Touchpoints
+  getTouchpoints(filters?: TouchpointFilters): Promise<Touchpoint[]>
+  getTouchpoint(id: string): Promise<Touchpoint | null>
+  getTouchpointStatus(id: string): Promise<TouchpointStatus>
+  
+  // Requirements
+  getRequirements(filters: RequirementFilters): Promise<DocumentRequirement[]>
+  validateDeclaration(declaration: Partial<CustomsDeclaration>): Promise<ComplianceIssue[]>
+  
+  // Financial
+  calculateDuties(declaration: Partial<CustomsDeclaration>): Promise<Duty[]>
+  calculateFees(declaration: Partial<CustomsDeclaration>): Promise<Fee[]>
+}
+
+export interface TouchpointFilters {
+  country?: CountryCode
+  type?: TouchpointType
+  borderType?: BorderType
+  transportMode?: TransportMode
+  status?: TouchpointStatus
+}
+
+export interface RequirementFilters {
+  country: CountryCode
+  declarationType?: CustomsDeclarationType
+  productCategory?: string
+  hsCode?: string
+}
+
+// ============================================================================
+// EVENTS
+// ============================================================================
+
+export type CustomsEventType =
+  | 'customs.declaration.created'
+  | 'customs.declaration.submitted'
+  | 'customs.declaration.approved'
+  | 'customs.declaration.rejected'
+  | 'customs.declaration.cleared'
+  | 'customs.document.uploaded'
+  | 'customs.document.verified'
+  | 'customs.touchpoint.status.changed'
+  | 'customs.compliance.issue.detected'
+  | 'customs.tir.carnet.issued'
+  | 'customs.tir.border.crossed'
+  | 'customs.acid.submitted'
+  | 'customs.acid.approved'
+
+export interface CustomsEvent {
+  type: CustomsEventType
+  declarationId?: string
+  touchpointId?: string
+  data: Record<string, any>
+  timestamp: Date
+  userId?: string
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

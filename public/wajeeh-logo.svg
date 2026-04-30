@@ -1,0 +1,13 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Wajeeh Logo - Stylized Symbol -->
+  <g>
+    <!-- Left part with curl (e-like shape) -->
+    <path d="M20 20 C20 15, 25 12, 30 15 C35 18, 38 25, 38 32 C38 38, 35 42, 30 44 C25 46, 20 44, 18 40" 
+          stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- Right part - stylized W -->
+    <path d="M38 32 L45 50 L52 32 L59 50 L66 32" 
+          stroke="white" stroke-width="3.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <!-- Wajeeh Text -->
+  <text x="20" y="65" font-family="Arial, sans-serif" font-size="22" font-weight="600" fill="white" letter-spacing="0.5px">Wajeeh</text>
+</svg>

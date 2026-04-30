@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: bluedxp-ingress
+  namespace: bluedxp
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+spec:
+  tls:
+  - hosts:
+    - bluedxp.example.com
+    secretName: bluedxp-tls
+  rules:
+  - host: bluedxp.example.com
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: bluedxp-service
+            port:
+              number: 80
+

@@ -1,0 +1,41 @@
+# Cursor ignore file to reduce indexing/watch load on large repos.
+# This directly helps prevent Cursor freezing on Windows by excluding
+# generated artifacts and large non-code dumps.
+
+# Dependencies / build output
+node_modules/
+.next/
+out/
+dist/
+build/
+coverage/
+.vercel/
+
+# Large generated reports / exports (not needed for day-to-day editing)
+chatgpt-export/
+gap-analysis-results/
+# Ignore generic audit output folders, but keep the platform audit service code
+audit/
+!lib/services/audit/
+!lib/services/audit/**
+!app/api/audit/
+!app/api/audit/**
+video-screenshots/
+archive/
+
+# Root-level report markdown explosion (keep core docs)
+/*.md
+!/README.md
+!/CONTRIBUTING.md
+!/SECURITY.md
+!/UI_UX_STANDARDS.md
+!/ARCHITECTURE_MINDMAP.md
+!/VISUAL_ARCHITECTURE_DIAGRAM.md
+!/CONSOLIDATION_SUMMARY.md
+
+# Large lockfiles can be huge and slow to open/index
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+

@@ -1,0 +1,91 @@
+# BlueDXP Platform - Helm Chart Values
+
+replicaCount: 3
+
+image:
+  repository: bluedxp/app
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+service:
+  type: ClusterIP
+  port: 3002
+
+ingress:
+  enabled: true
+  className: "nginx"
+  annotations:
+    cert-manager.io/cluster-issuer: "letsencrypt-prod"
+  hosts:
+    - host: bluedxp.example.com
+      paths:
+        - path: /
+          pathType: Prefix
+  tls:
+    - secretName: bluedxp-tls
+      hosts:
+        - bluedxp.example.com
+
+resources:
+  limits:
+    cpu: 2000m
+    memory: 4Gi
+  requests:
+    cpu: 1000m
+    memory: 2Gi
+
+autoscaling:
+  enabled: true
+  minReplicas: 3
+  maxReplicas: 10
+  targetCPUUtilizationPercentage: 70
+  targetMemoryUtilizationPercentage: 80
+
+env:
+  - name: NODE_ENV
+    value: "production"
+  - name: DATABASE_URL
+    valueFrom:
+      secretKeyRef:
+        name: bluedxp-secrets
+        key: database-url
+  - name: REDIS_URL
+    valueFrom:
+      secretKeyRef:
+        name: bluedxp-secrets
+        key: redis-url
+
+postgresql:
+  enabled: true
+  auth:
+    # DO NOT put passwords in values.yaml.
+    # Provide credentials via Kubernetes Secrets (recommended) or set at install time.
+    # Example (recommended):
+    # - create secret `bluedxp-secrets` and wire it in your chart templates
+    # - or use the upstream chart's `existingSecret` settings if available
+    postgresPassword: ""
+    database: "bluedxp"
+  persistence:
+    enabled: true
+    size: 100Gi
+
+redis:
+  enabled: true
+  auth:
+    enabled: true
+    # DO NOT put passwords in values.yaml (use a Secret).
+    password: ""
+  persistence:
+    enabled: true
+    size: 20Gi
+
+rabbitmq:
+  enabled: true
+  auth:
+    username: "bluedxp"
+    # DO NOT put passwords in values.yaml (use a Secret).
+    password: ""
+  persistence:
+    enabled: true
+    size: 10Gi
+

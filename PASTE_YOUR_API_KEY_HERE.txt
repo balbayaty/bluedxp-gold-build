@@ -1,0 +1,48 @@
+================================================================================
+  PASTE YOUR API KEY HERE
+================================================================================
+
+To get HazalyzeCopilot working, I need you to do ONE simple thing:
+
+STEP 1: Get an API Key
+======================
+
+Go to: https://platform.openai.com/api-keys
+
+- Sign in (or create a free account)
+- Click "+ Create new secret key"
+- Give it a name like "HazalyzeCopilot"
+- Copy the key (it starts with "sk-proj-" or "sk-")
+
+STEP 2: Paste Your Key Below
+=============================
+
+Replace "PASTE_YOUR_KEY_HERE" with your actual API key:
+
+YOUR_API_KEY=PASTE_YOUR_KEY_HERE
+
+(Make sure to remove the quotes and just paste the raw key)
+
+STEP 3: Save This File
+======================
+
+Save this file (Ctrl+S)
+
+STEP 4: Run the Auto-Setup
+===========================
+
+Then run this command in PowerShell:
+
+.\APPLY_API_KEY.ps1
+
+That's it! The script will:
+- Read your key from this file
+- Add it to .env.local
+- Restart your dev server
+- HazalyzeCopilot will work immediately!
+
+================================================================================
+
+IMPORTANT: Keep your API key secret! Never share it or commit it to Git.
+
+================================================================================

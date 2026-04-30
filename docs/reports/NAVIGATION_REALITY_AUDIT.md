@@ -1,0 +1,117 @@
+# Navigation Reality Audit
+
+**Generated:** 2025-12-22T08:10:15.612Z
+
+## Summary
+- Total pages: 520
+- Total nav links: 374
+- Pages in navigation: 374
+- Pages NOT in navigation: 146
+- Nav links WITHOUT pages: 0
+- Generated placeholder pages: 21
+- Pages not in nav BUT declared in module registry: 44
+
+## Pages NOT in navigation (top 100)
+- `/websocket/streams` — `app/websocket/streams/page.tsx`
+- `/warehouses/[id]` — `app/warehouses/[id]/page.tsx`
+- `/warehouses/[id]/zones/[zoneId]` — `app/warehouses/[id]/zones/[zoneId]/page.tsx`
+- `/warehouses/[id]/tasks/[taskId]` — `app/warehouses/[id]/tasks/[taskId]/page.tsx`
+- `/warehouses/[id]/sensors/[sensorId]` — `app/warehouses/[id]/sensors/[sensorId]/page.tsx`
+- `/warehouses/[id]/inventory/[itemId]` — `app/warehouses/[id]/inventory/[itemId]/page.tsx`
+- `/warehouses/[id]/equipment/[equipmentId]` — `app/warehouses/[id]/equipment/[equipmentId]/page.tsx`
+- `/warehouse-network/optimization` — `app/warehouse-network/optimization/page.tsx` (module:warehouse-network)
+- `/warehouse-network/cross-docking` — `app/warehouse-network/cross-docking/page.tsx` (placeholder, module:warehouse-network)
+- `/users` — `app/users/page.tsx` (module:wms)
+- `/truth-timeline/[entityType]/[entityId]` — `app/truth-timeline/[entityType]/[entityId]/page.tsx`
+- `/truth-engine/knowledge-graph` — `app/truth-engine/knowledge-graph/page.tsx`
+- `/truth-engine/dashboard` — `app/truth-engine/dashboard/page.tsx`
+- `/truth-engine/claims` — `app/truth-engine/claims/page.tsx`
+- `/transportation/scenario-simulation` — `app/transportation/scenario-simulation/page.tsx` (module:tms)
+- `/transportation/route-comparison` — `app/transportation/route-comparison/page.tsx` (placeholder, module:tms)
+- `/transportation/realtime` — `app/transportation/realtime/page.tsx` (placeholder, module:tms)
+- `/transportation/proposals/[id]` — `app/transportation/proposals/[id]/page.tsx`
+- `/transportation/pricing` — `app/transportation/pricing/page.tsx` (placeholder, module:tms)
+- `/transportation/network-modeling` — `app/transportation/network-modeling/page.tsx` (module:tms)
+- `/transportation/multi-enterprise` — `app/transportation/multi-enterprise/page.tsx` (module:tms)
+- `/transportation/load-matching` — `app/transportation/load-matching/page.tsx` (placeholder, module:tms)
+- `/transportation/load-building` — `app/transportation/load-building/page.tsx` (module:tms)
+- `/transportation/last-mile` — `app/transportation/last-mile/page.tsx` (module:tms)
+- `/transportation/journey-analysis` — `app/transportation/journey-analysis/page.tsx` (module:tms)
+- `/transportation/iot` — `app/transportation/iot/page.tsx` (placeholder, module:tms)
+- `/transportation/fleet` — `app/transportation/fleet/page.tsx` (placeholder, module:tms)
+- `/transportation/exports` — `app/transportation/exports/page.tsx` (module:tms)
+- `/transportation/emissions` — `app/transportation/emissions/page.tsx` (placeholder, module:tms)
+- `/transportation/edge-computing` — `app/transportation/edge-computing/page.tsx` (module:tms)
+- `/transportation/digital-twins` — `app/transportation/digital-twins/page.tsx` (module:tms)
+- `/transportation/dashboard` — `app/transportation/dashboard/page.tsx` (module:tms)
+- `/transportation/customization` — `app/transportation/customization/page.tsx` (module:tms)
+- `/transportation/compliance` — `app/transportation/compliance/page.tsx` (placeholder, module:tms)
+- `/transportation/collaboration` — `app/transportation/collaboration/page.tsx` (module:tms)
+- `/transportation/carriers` — `app/transportation/carriers/page.tsx`
+- `/transportation/carrier-portal` — `app/transportation/carrier-portal/page.tsx` (module:tms)
+- `/transportation/blockchain` — `app/transportation/blockchain/page.tsx` (placeholder, module:tms)
+- `/transportation/audit` — `app/transportation/audit/page.tsx` (placeholder, module:tms)
+- `/transportation/analytics/scenario` — `app/transportation/analytics/scenario/page.tsx` (module:tms)
+- `/transportation/analytics/network` — `app/transportation/analytics/network/page.tsx` (module:tms)
+- `/transportation/analytics/load-building` — `app/transportation/analytics/load-building/page.tsx` (module:tms)
+- `/transportation/analytics/last-mile` — `app/transportation/analytics/last-mile/page.tsx` (module:tms)
+- `/transportation/analytics/digital-twins` — `app/transportation/analytics/digital-twins/page.tsx` (module:tms)
+- `/trade-compliance/licenses/apply` — `app/trade-compliance/licenses/apply/page.tsx`
+- `/test-page` — `app/test-page/page.tsx`
+- `/test-notifications` — `app/test-notifications/page.tsx`
+- `/task-management` — `app/task-management/page.tsx` (module:wms)
+- `/settings/currency` — `app/settings/currency/page.tsx`
+- `/qhse-dashboard` — `app/qhse-dashboard/page.tsx`
+- `/qhse/training/new` — `app/qhse/training/new/page.tsx`
+- `/qhse/inspections/new` — `app/qhse/inspections/new/page.tsx`
+- `/qhse/incidents/new` — `app/qhse/incidents/new/page.tsx`
+- `/qhse/comprehensive` — `app/qhse/comprehensive/page.tsx` (module:qhse)
+- `/purchase-orders` — `app/purchase-orders/page.tsx` (module:wms)
+- `/pulse/admin/rulesets` — `app/pulse/admin/rulesets/page.tsx`
+- `/pulse/admin/redemptions` — `app/pulse/admin/redemptions/page.tsx`
+- `/projects` — `app/projects/page.tsx`
+- `/projects/[id]` — `app/projects/[id]/page.tsx`
+- `/process-lifecycle/workflows/[workflowId]` — `app/process-lifecycle/workflows/[workflowId]/page.tsx`
+- `/process-lifecycle/workflows/builder` — `app/process-lifecycle/workflows/builder/page.tsx` (module:process-lifecycle)
+- `/ncr` — `app/ncr/page.tsx` (module:wms)
+- `/marketplace/sustainability` — `app/marketplace/sustainability/page.tsx`
+- `/marketplace/providers/verify` — `app/marketplace/providers/verify/page.tsx`
+- `/marketplace/pricing/[listingId]` — `app/marketplace/pricing/[listingId]/page.tsx`
+- `/marketplace/payment` — `app/marketplace/payment/page.tsx`
+- `/marketplace/messages` — `app/marketplace/messages/page.tsx` (module:marketplace)
+- `/marketplace/matching/[id]` — `app/marketplace/matching/[id]/page.tsx`
+- `/marketplace/listings/[id]` — `app/marketplace/listings/[id]/page.tsx`
+- `/marketplace/listings/new` — `app/marketplace/listings/new/page.tsx`
+- `/marketplace/forecasting` — `app/marketplace/forecasting/page.tsx`
+- `/marketplace/favorites` — `app/marketplace/favorites/page.tsx`
+- `/marketplace/contracts` — `app/marketplace/contracts/page.tsx` (module:marketplace)
+- `/marketplace/contracts/[id]` — `app/marketplace/contracts/[id]/page.tsx`
+- `/marketplace/compare` — `app/marketplace/compare/page.tsx`
+- `/marketplace/bookings/[id]` — `app/marketplace/bookings/[id]/page.tsx`
+- `/marketplace/bookings/[id]/review` — `app/marketplace/bookings/[id]/review/page.tsx`
+- `/marketplace/analytics` — `app/marketplace/analytics/page.tsx`
+- `/maas` — `app/maas/page.tsx` (placeholder, module:maas)
+- `/login` — `app/login/page.tsx`
+- `/liability/rules` — `app/liability/rules/page.tsx`
+- `/liability/rules/new` — `app/liability/rules/new/page.tsx`
+- `/liability/dashboard` — `app/liability/dashboard/page.tsx`
+- `/liability/compliance` — `app/liability/compliance/page.tsx`
+- `/liability/claims` — `app/liability/claims/page.tsx`
+- `/liability/claims/[id]` — `app/liability/claims/[id]/page.tsx`
+- `/liability/claims/new` — `app/liability/claims/new/page.tsx`
+- `/liability/calculator` — `app/liability/calculator/page.tsx`
+- `/liability/assessments` — `app/liability/assessments/page.tsx`
+- `/liability/assessments/[id]` — `app/liability/assessments/[id]/page.tsx`
+- `/iot/network/topology` — `app/iot/network/topology/page.tsx`
+- `/integrations/callback` — `app/integrations/callback/page.tsx`
+- `/integration` — `app/integration/page.tsx`
+- `/ict-hardware-ecosystem` — `app/ict-hardware-ecosystem/page.tsx`
+- `/ict-hardware-ecosystem/products` — `app/ict-hardware-ecosystem/products/page.tsx`
+- `/ict-hardware-ecosystem/partnerships` — `app/ict-hardware-ecosystem/partnerships/page.tsx`
+- `/ict-hardware-ecosystem/manufacturing` — `app/ict-hardware-ecosystem/manufacturing/page.tsx`
+- `/feature-registry` — `app/feature-registry/page.tsx`
+- `/feature-demo` — `app/feature-demo/page.tsx`
+- `/facility/work-orders/[id]` — `app/facility/work-orders/[id]/page.tsx`
+- ... and 46 more
+
+## Navigation links without pages

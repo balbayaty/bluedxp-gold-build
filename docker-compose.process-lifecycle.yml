@@ -1,0 +1,172 @@
+version: '3.8'
+
+services:
+  # Process Lifecycle Service
+  lifecycle-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.process-lifecycle
+    container_name: process-lifecycle-service
+    ports:
+      - "3002:3002"
+    environment:
+      - NODE_ENV=production
+      - REDIS_URL=redis://redis:6379
+      - POSTGRES_URL=postgresql://postgres:postgres@postgres:5432/process_lifecycle
+      - EVENT_BUS_URL=amqp://rabbitmq:5672
+    depends_on:
+      - redis
+      - postgres
+      - rabbitmq
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+  # Workflow Service
+  workflow-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.workflow
+    container_name: workflow-service
+    ports:
+      - "3003:3003"
+    environment:
+      - NODE_ENV=production
+      - EVENT_BUS_URL=amqp://rabbitmq:5672
+    depends_on:
+      - rabbitmq
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+  # Process Mining Service
+  process-mining-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.process-mining
+    container_name: process-mining-service
+    ports:
+      - "3004:3004"
+    environment:
+      - NODE_ENV=production
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - elasticsearch
+      - redis
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+  # AI Service
+  ai-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.ai
+    container_name: ai-service
+    ports:
+      - "3005:3005"
+    environment:
+      - NODE_ENV=production
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+  # WebSocket Service
+  websocket-service:
+    build:
+      context: .
+      dockerfile: Dockerfile.websocket
+    container_name: websocket-service
+    ports:
+      - "3010:3010"
+    environment:
+      - NODE_ENV=production
+      - REDIS_URL=redis://redis:6379
+    depends_on:
+      - redis
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+  # Redis
+  redis:
+    image: redis:7-alpine
+    container_name: process-lifecycle-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+  # PostgreSQL
+  postgres:
+    image: postgres:15-alpine
+    container_name: process-lifecycle-postgres
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=process_lifecycle
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+  # RabbitMQ
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    container_name: process-lifecycle-rabbitmq
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=admin
+    volumes:
+      - rabbitmq-data:/var/lib/rabbitmq
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+  # Elasticsearch (for process mining)
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.11.0
+    container_name: process-lifecycle-elasticsearch
+    ports:
+      - "9200:9200"
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    volumes:
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    networks:
+      - process-lifecycle-network
+    restart: unless-stopped
+
+volumes:
+  redis-data:
+  postgres-data:
+  rabbitmq-data:
+  elasticsearch-data:
+
+networks:
+  process-lifecycle-network:
+    driver: bridge
+
+
+
+
+
+
+
+
+
+
+

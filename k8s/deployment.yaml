@@ -1,0 +1,66 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: bluedxp-app
+  namespace: bluedxp
+  labels:
+    app: bluedxp
+    component: app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: bluedxp
+      component: app
+  template:
+    metadata:
+      labels:
+        app: bluedxp
+        component: app
+    spec:
+      containers:
+      - name: bluedxp
+        image: bluedxp:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 3002
+          name: http
+        env:
+        - name: NODE_ENV
+          valueFrom:
+            configMapKeyRef:
+              name: bluedxp-config
+              key: NODE_ENV
+        - name: DATABASE_URL
+          valueFrom:
+            configMapKeyRef:
+              name: bluedxp-config
+              key: DATABASE_URL
+        - name: REDIS_URL
+          valueFrom:
+            configMapKeyRef:
+              name: bluedxp-config
+              key: REDIS_URL
+        envFrom:
+        - secretRef:
+            name: bluedxp-secrets
+        resources:
+          requests:
+            memory: "512Mi"
+            cpu: "250m"
+          limits:
+            memory: "2Gi"
+            cpu: "1000m"
+        livenessProbe:
+          httpGet:
+            path: /api/health
+            port: http
+          initialDelaySeconds: 30
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /api/health
+            port: http
+          initialDelaySeconds: 10
+          periodSeconds: 5
+

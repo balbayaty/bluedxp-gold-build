@@ -1,0 +1,347 @@
+{
+  "generatedAt": "2026-01-06T13:25:48.306Z",
+  "baseUrl": "http://localhost:3002",
+  "summary": {
+    "total": 41,
+    "passed": 0,
+    "failed": 41,
+    "redirected": 0,
+    "slow": 0,
+    "placeholders": 0
+  },
+  "results": {
+    "passed": [],
+    "failed": [
+      {
+        "path": "/",
+        "name": "Home Dashboard",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 107,
+        "error": ""
+      },
+      {
+        "path": "/showcase",
+        "name": "Showcase",
+        "critical": false,
+        "statusCode": 0,
+        "loadTime": 20,
+        "error": ""
+      },
+      {
+        "path": "/inbound",
+        "name": "Inbound Operations",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 8,
+        "error": ""
+      },
+      {
+        "path": "/outbound",
+        "name": "Outbound Operations",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 8,
+        "error": ""
+      },
+      {
+        "path": "/goods-receipt",
+        "name": "Goods Receipt",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 9,
+        "error": ""
+      },
+      {
+        "path": "/goods-issue",
+        "name": "Goods Issue",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 23,
+        "error": ""
+      },
+      {
+        "path": "/inventory",
+        "name": "Inventory",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 6,
+        "error": ""
+      },
+      {
+        "path": "/skus",
+        "name": "SKU Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 27,
+        "error": ""
+      },
+      {
+        "path": "/batches",
+        "name": "Batch Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 7,
+        "error": ""
+      },
+      {
+        "path": "/putaway",
+        "name": "Putaway",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 9,
+        "error": ""
+      },
+      {
+        "path": "/picking",
+        "name": "Picking",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 5,
+        "error": ""
+      },
+      {
+        "path": "/orders",
+        "name": "Purchase Orders",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 12,
+        "error": ""
+      },
+      {
+        "path": "/sales-orders",
+        "name": "Sales Orders",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 11,
+        "error": ""
+      },
+      {
+        "path": "/customers",
+        "name": "Customers",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 5,
+        "error": ""
+      },
+      {
+        "path": "/vendors",
+        "name": "Vendors",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/carriers",
+        "name": "Carriers",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 5,
+        "error": ""
+      },
+      {
+        "path": "/warehouses",
+        "name": "Warehouses",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/bins",
+        "name": "Storage Bins",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/storage-locations",
+        "name": "Storage Locations",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 5,
+        "error": ""
+      },
+      {
+        "path": "/transportation",
+        "name": "TMS Dashboard",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/tracking",
+        "name": "Shipment Tracking",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 5,
+        "error": ""
+      },
+      {
+        "path": "/routes",
+        "name": "Routes",
+        "critical": false,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/iso-ims",
+        "name": "ISO-IMS Dashboard",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 5,
+        "error": ""
+      },
+      {
+        "path": "/capa-management",
+        "name": "CAPA Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/ncr-management",
+        "name": "NCR Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/audit-management",
+        "name": "Audit Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 3,
+        "error": ""
+      },
+      {
+        "path": "/proposals",
+        "name": "Proposals",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/proposals/rfq",
+        "name": "RFQ Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/msds",
+        "name": "MSDS Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 3,
+        "error": ""
+      },
+      {
+        "path": "/ai-vision",
+        "name": "AI Vision",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/manufacturing",
+        "name": "Manufacturing",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/compliance",
+        "name": "Compliance",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/trade-compliance",
+        "name": "Trade Compliance",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/reports",
+        "name": "Reports",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 3,
+        "error": ""
+      },
+      {
+        "path": "/kpi-dashboard",
+        "name": "KPI Dashboard",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 3,
+        "error": ""
+      },
+      {
+        "path": "/sla-kpi",
+        "name": "SLA Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/settings",
+        "name": "Settings",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 3,
+        "error": ""
+      },
+      {
+        "path": "/settings/users",
+        "name": "User Management",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 3,
+        "error": ""
+      },
+      {
+        "path": "/tasks",
+        "name": "Tasks",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 4,
+        "error": ""
+      },
+      {
+        "path": "/my-tasks",
+        "name": "My Tasks",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 3,
+        "error": ""
+      },
+      {
+        "path": "/approvals",
+        "name": "Approvals",
+        "critical": true,
+        "statusCode": 0,
+        "loadTime": 3,
+        "error": ""
+      }
+    ],
+    "redirected": [],
+    "slow": []
+  }
+}

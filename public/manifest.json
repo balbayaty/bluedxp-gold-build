@@ -1,0 +1,83 @@
+{
+  "name": "Hazalyze Chemical Management",
+  "short_name": "Hazalyze",
+  "description": "World's most advanced chemical management platform",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#111827",
+  "theme_color": "#06b6d4",
+  "orientation": "any",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity", "utilities"],
+  "screenshots": [
+    {
+      "src": "/screenshot-wide.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Chemical Database",
+      "short_name": "Chemicals",
+      "description": "Access chemical database",
+      "url": "/chemical-database",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "MSDS",
+      "short_name": "MSDS",
+      "description": "Manage MSDS documents",
+      "url": "/msds",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Container Tracking",
+      "short_name": "Containers",
+      "description": "Track containers",
+      "url": "/chemical-inventory/containers",
+      "icons": [{ "src": "/icon-192.png", "sizes": "192x192" }]
+    }
+  ],
+  "share_target": {
+    "action": "/share",
+    "method": "POST",
+    "enctype": "multipart/form-data",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url",
+      "files": [
+        {
+          "name": "file",
+          "accept": ["application/pdf", "image/*"]
+        }
+      ]
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

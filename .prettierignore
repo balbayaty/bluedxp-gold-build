@@ -1,0 +1,41 @@
+# Dependencies
+node_modules/
+.next/
+out/
+build/
+dist/
+
+# Coverage
+coverage/
+
+# Generated files
+*.min.js
+*.min.css
+
+# Lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# IDE
+.idea/
+.vscode/
+
+# Logs
+*.log
+
+# Prisma generated
+prisma/migrations/
+
+# Archive
+archive/
+
+# Mobile
+mobile/
+
+# Documentation (may have intentional formatting)
+docs/**/*.md
+*.md
+
+# Other
+.env*

@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Proposal API - Check endpoint exists",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 161
+  },
+  {
+    "name": "WMS Inbound API - Check endpoint exists",
+    "status": "FAIL",
+    "message": "WMS Inbound API directory not found",
+    "duration": 2
+  },
+  {
+    "name": "TMS Shipments API - Check endpoint exists",
+    "status": "FAIL",
+    "message": "TMS Shipments API directory not found",
+    "duration": 2
+  },
+  {
+    "name": "Login API - Endpoint exists",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 2
+  },
+  {
+    "name": "Password Reset API - Endpoint exists",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 2
+  },
+  {
+    "name": "Auth Service - Service exists",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Rate Limiter - Service exists",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Database - Tenant isolation in Sales Orders",
+    "status": "FAIL",
+    "message": "\nInvalid `prisma.salesOrder.count()` invocation:\n\n\nThe table `public.SalesOrder` does not exist in the current database.",
+    "duration": 267
+  },
+  {
+    "name": "Database - Tenant isolation in Purchase Orders",
+    "status": "FAIL",
+    "message": "\nInvalid `prisma.purchaseOrder.count()` invocation:\n\n\nThe table `public.PurchaseOrder` does not exist in the current database.",
+    "duration": 7
+  },
+  {
+    "name": "Database - New tables have tenantId",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 505
+  },
+  {
+    "name": "Resilience Dashboard - Route exists",
+    "status": "FAIL",
+    "message": "Resilience dashboard API not found",
+    "duration": 2
+  },
+  {
+    "name": "Performance Dashboard - Route exists",
+    "status": "FAIL",
+    "message": "Performance dashboard API not found",
+    "duration": 2
+  },
+  {
+    "name": "3D Warehouse - Component exists",
+    "status": "FAIL",
+    "message": "3D Warehouse visualization component not found",
+    "duration": 4
+  },
+  {
+    "name": "Charts - Recharts library available",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 3
+  },
+  {
+    "name": "Page - Home Page",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Main Dashboard",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Sales Orders",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 0
+  },
+  {
+    "name": "Page - Purchase Orders",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Inbound Deliveries",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Outbound Orders",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Inventory",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 2
+  },
+  {
+    "name": "Page - Customers",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Vendors",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Materials",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Warehouses",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - TMS Shipments",
+    "status": "FAIL",
+    "message": "Page file not found: app/tms/shipments/page.tsx",
+    "duration": 1
+  },
+  {
+    "name": "Page - Lifecycle Management",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 0
+  },
+  {
+    "name": "Page - Feature Registry",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 2
+  },
+  {
+    "name": "Page - Bins",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  },
+  {
+    "name": "Page - Jobs",
+    "status": "PASS",
+    "message": "Test passed",
+    "duration": 1
+  }
+]

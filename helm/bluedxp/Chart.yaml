@@ -1,0 +1,15 @@
+apiVersion: v2
+name: bluedxp
+description: BlueDXP Platform - Enterprise Intelligence Operating System
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+keywords:
+  - bluedxp
+  - warehouse-management
+  - enterprise
+  - saudi-arabia
+maintainers:
+  - name: BlueDXP Team
+    email: support@bluedxp.com
+

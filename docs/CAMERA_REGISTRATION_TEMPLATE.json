@@ -1,0 +1,44 @@
+{
+  "cameras": [
+    {
+      "cameraId": "CAM-001",
+      "name": "Camera Name",
+      "ipAddress": "192.168.1.100",
+      "port": 80,
+      "username": "admin",
+      "password": "your-password",
+      "model": "Dahua Model Number",
+      "serialNumber": "Serial Number",
+      "warehouseId": "wh-001",
+      "zone": "Zone Name",
+      "location": "Physical Location Description"
+    }
+  ],
+  "nvr": {
+    "ipAddress": "192.168.1.50",
+    "port": 80,
+    "username": "admin",
+    "password": "your-password",
+    "model": "NVR Model",
+    "serialNumber": "NVR Serial"
+  },
+  "network": {
+    "networkRange": "192.168.1.0/24",
+    "gateway": "192.168.1.1",
+    "subnet": "255.255.255.0"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

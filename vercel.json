@@ -1,0 +1,22 @@
+{
+  "crons": [
+    {
+      "path": "/api/cron/pulse/daily-missions",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/pulse/daily-snapshots",
+      "schedule": "0 1 * * *"
+    },
+    {
+      "path": "/api/cron/pulse/weekly-snapshots",
+      "schedule": "0 2 * * 0"
+    },
+    {
+      "path": "/api/cron/pulse/monthly-benchmarks",
+      "schedule": "0 3 1 * *"
+    }
+  ]
+}
+
+

@@ -1,0 +1,1455 @@
+{
+  "generatedAt": "2025-12-22T06:18:59.603Z",
+  "summary": {
+    "totalPages": 513,
+    "totalNavLinks": 374,
+    "pagesInNavigation": 367,
+    "pagesNotInNavigation": 146,
+    "navLinksWithoutPages": 7,
+    "generatedPlaceholderPages": 21,
+    "pagesNotInNavButInModuleRegistry": 44
+  },
+  "pagesNotInNavigation": [
+    {
+      "route": "/websocket/streams",
+      "file": "app/websocket/streams/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/warehouses/[id]",
+      "file": "app/warehouses/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/warehouses/[id]/zones/[zoneId]",
+      "file": "app/warehouses/[id]/zones/[zoneId]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/warehouses/[id]/tasks/[taskId]",
+      "file": "app/warehouses/[id]/tasks/[taskId]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/warehouses/[id]/sensors/[sensorId]",
+      "file": "app/warehouses/[id]/sensors/[sensorId]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/warehouses/[id]/inventory/[itemId]",
+      "file": "app/warehouses/[id]/inventory/[itemId]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/warehouses/[id]/equipment/[equipmentId]",
+      "file": "app/warehouses/[id]/equipment/[equipmentId]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/warehouse-network/optimization",
+      "file": "app/warehouse-network/optimization/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "warehouse-network",
+          "title": "Network Optimization",
+          "component": "app/warehouse-network/optimization/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/warehouse-network/cross-docking",
+      "file": "app/warehouse-network/cross-docking/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "warehouse-network",
+          "title": "Cross-Docking",
+          "component": "app/warehouse-network/cross-docking/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/users",
+      "file": "app/users/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "wms",
+          "title": "Users",
+          "component": "app/users/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/truth-timeline/[entityType]/[entityId]",
+      "file": "app/truth-timeline/[entityType]/[entityId]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/truth-engine/knowledge-graph",
+      "file": "app/truth-engine/knowledge-graph/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/truth-engine/dashboard",
+      "file": "app/truth-engine/dashboard/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/truth-engine/claims",
+      "file": "app/truth-engine/claims/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/scenario-simulation",
+      "file": "app/transportation/scenario-simulation/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Scenario Simulation",
+          "component": "app/transportation/scenario-simulation/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/route-comparison",
+      "file": "app/transportation/route-comparison/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Route Comparison",
+          "component": "app/transportation/route-comparison/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/realtime",
+      "file": "app/transportation/realtime/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Real-Time Updates",
+          "component": "app/transportation/realtime/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/proposals/[id]",
+      "file": "app/transportation/proposals/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/pricing",
+      "file": "app/transportation/pricing/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Pricing Intelligence",
+          "component": "app/transportation/pricing/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/network-modeling",
+      "file": "app/transportation/network-modeling/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Network Modeling",
+          "component": "app/transportation/network-modeling/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/multi-enterprise",
+      "file": "app/transportation/multi-enterprise/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Multi-Enterprise Network",
+          "component": "app/transportation/multi-enterprise/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/load-matching",
+      "file": "app/transportation/load-matching/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Load Matching",
+          "component": "app/transportation/load-matching/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/load-building",
+      "file": "app/transportation/load-building/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Load Building",
+          "component": "app/transportation/load-building/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/last-mile",
+      "file": "app/transportation/last-mile/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Last-Mile Optimization",
+          "component": "app/transportation/last-mile/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/journey-analysis",
+      "file": "app/transportation/journey-analysis/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Journey Analysis",
+          "component": "app/transportation/journey-analysis/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/iot",
+      "file": "app/transportation/iot/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "IoT Monitoring",
+          "component": "app/transportation/iot/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/fleet",
+      "file": "app/transportation/fleet/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Fleet Management",
+          "component": "app/transportation/fleet/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/exports",
+      "file": "app/transportation/exports/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Exports & Reports",
+          "component": "app/transportation/exports/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/emissions",
+      "file": "app/transportation/emissions/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "CO2 Emissions",
+          "component": "app/transportation/emissions/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/edge-computing",
+      "file": "app/transportation/edge-computing/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Edge Computing",
+          "component": "app/transportation/edge-computing/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/digital-twins",
+      "file": "app/transportation/digital-twins/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Digital Twins",
+          "component": "app/transportation/digital-twins/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/dashboard",
+      "file": "app/transportation/dashboard/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Intelligence Hub",
+          "component": "app/transportation/dashboard/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/customization",
+      "file": "app/transportation/customization/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Customization",
+          "component": "app/transportation/customization/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/compliance",
+      "file": "app/transportation/compliance/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Compliance",
+          "component": "app/transportation/compliance/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/collaboration",
+      "file": "app/transportation/collaboration/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Collaboration",
+          "component": "app/transportation/collaboration/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/carriers",
+      "file": "app/transportation/carriers/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/carrier-portal",
+      "file": "app/transportation/carrier-portal/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Carrier Portal",
+          "component": "app/transportation/carrier-portal/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/blockchain",
+      "file": "app/transportation/blockchain/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Blockchain",
+          "component": "app/transportation/blockchain/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/audit",
+      "file": "app/transportation/audit/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Freight Audit",
+          "component": "app/transportation/audit/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/transportation/analytics/scenario",
+      "file": "app/transportation/analytics/scenario/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Scenario Analytics",
+          "component": "app/transportation/analytics/scenario/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/analytics/network",
+      "file": "app/transportation/analytics/network/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Network Analytics",
+          "component": "app/transportation/analytics/network/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/analytics/load-building",
+      "file": "app/transportation/analytics/load-building/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Load Building Analytics",
+          "component": "app/transportation/analytics/load-building/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/analytics/last-mile",
+      "file": "app/transportation/analytics/last-mile/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Last-Mile Analytics",
+          "component": "app/transportation/analytics/last-mile/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/transportation/analytics/digital-twins",
+      "file": "app/transportation/analytics/digital-twins/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "tms",
+          "title": "Digital Twins Analytics",
+          "component": "app/transportation/analytics/digital-twins/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/trade-compliance/licenses/apply",
+      "file": "app/trade-compliance/licenses/apply/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/test-page",
+      "file": "app/test-page/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/test-notifications",
+      "file": "app/test-notifications/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/task-management",
+      "file": "app/task-management/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "wms",
+          "title": "Task Management",
+          "component": "app/task-management/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/settings/currency",
+      "file": "app/settings/currency/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/qhse-dashboard",
+      "file": "app/qhse-dashboard/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/qhse/training/new",
+      "file": "app/qhse/training/new/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/qhse/inspections/new",
+      "file": "app/qhse/inspections/new/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/qhse/incidents/new",
+      "file": "app/qhse/incidents/new/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/qhse/comprehensive",
+      "file": "app/qhse/comprehensive/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "qhse",
+          "title": "Comprehensive QHSE",
+          "component": "app/qhse/comprehensive/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/purchase-orders",
+      "file": "app/purchase-orders/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "wms",
+          "title": "Purchase Orders",
+          "component": "app/purchase-orders/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/pulse/admin/rulesets",
+      "file": "app/pulse/admin/rulesets/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/pulse/admin/redemptions",
+      "file": "app/pulse/admin/redemptions/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/projects",
+      "file": "app/projects/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/projects/[id]",
+      "file": "app/projects/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/process-lifecycle/workflows/[workflowId]",
+      "file": "app/process-lifecycle/workflows/[workflowId]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/process-lifecycle/workflows/builder",
+      "file": "app/process-lifecycle/workflows/builder/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "process-lifecycle",
+          "title": "Workflow Builder",
+          "component": "app/process-lifecycle/workflows/builder/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ncr",
+      "file": "app/ncr/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "wms",
+          "title": "NCR Management",
+          "component": "app/ncr/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/sustainability",
+      "file": "app/marketplace/sustainability/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/providers/verify",
+      "file": "app/marketplace/providers/verify/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/pricing/[listingId]",
+      "file": "app/marketplace/pricing/[listingId]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/payment",
+      "file": "app/marketplace/payment/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/messages",
+      "file": "app/marketplace/messages/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "marketplace",
+          "title": "Messages",
+          "component": "app/marketplace/messages/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/matching/[id]",
+      "file": "app/marketplace/matching/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/listings/[id]",
+      "file": "app/marketplace/listings/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/listings/new",
+      "file": "app/marketplace/listings/new/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/forecasting",
+      "file": "app/marketplace/forecasting/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/favorites",
+      "file": "app/marketplace/favorites/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/contracts",
+      "file": "app/marketplace/contracts/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "marketplace",
+          "title": "Service Agreements",
+          "component": "app/marketplace/contracts/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/contracts/[id]",
+      "file": "app/marketplace/contracts/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/compare",
+      "file": "app/marketplace/compare/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/bookings/[id]",
+      "file": "app/marketplace/bookings/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/bookings/[id]/review",
+      "file": "app/marketplace/bookings/[id]/review/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/marketplace/analytics",
+      "file": "app/marketplace/analytics/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/maas",
+      "file": "app/maas/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "maas",
+          "title": "MaaS Dashboard",
+          "component": "app/maas/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/login",
+      "file": "app/login/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/rules",
+      "file": "app/liability/rules/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/rules/new",
+      "file": "app/liability/rules/new/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/dashboard",
+      "file": "app/liability/dashboard/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/compliance",
+      "file": "app/liability/compliance/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/claims",
+      "file": "app/liability/claims/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/claims/[id]",
+      "file": "app/liability/claims/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/claims/new",
+      "file": "app/liability/claims/new/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/calculator",
+      "file": "app/liability/calculator/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/assessments",
+      "file": "app/liability/assessments/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/liability/assessments/[id]",
+      "file": "app/liability/assessments/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/iot/network/topology",
+      "file": "app/iot/network/topology/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/integrations/callback",
+      "file": "app/integrations/callback/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/integration",
+      "file": "app/integration/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ict-hardware-ecosystem",
+      "file": "app/ict-hardware-ecosystem/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ict-hardware-ecosystem/products",
+      "file": "app/ict-hardware-ecosystem/products/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ict-hardware-ecosystem/partnerships",
+      "file": "app/ict-hardware-ecosystem/partnerships/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ict-hardware-ecosystem/manufacturing",
+      "file": "app/ict-hardware-ecosystem/manufacturing/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/feature-registry",
+      "file": "app/feature-registry/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/feature-demo",
+      "file": "app/feature-demo/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/facility/work-orders/[id]",
+      "file": "app/facility/work-orders/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/facility/utility-bills",
+      "file": "app/facility/utility-bills/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "facility-management",
+          "title": "Utility Bills",
+          "component": "app/facility/utility-bills/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/facility/utility-bills/[id]",
+      "file": "app/facility/utility-bills/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/facility/utility-bills/comparison",
+      "file": "app/facility/utility-bills/comparison/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "facility-management",
+          "title": "Bill Comparison",
+          "component": "app/facility/utility-bills/comparison/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/facility/utility-bills/analytics",
+      "file": "app/facility/utility-bills/analytics/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "facility-management",
+          "title": "Bill Analytics",
+          "component": "app/facility/utility-bills/analytics/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/facility/assets/[id]",
+      "file": "app/facility/assets/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/digital-signatures/documents",
+      "file": "app/digital-signatures/documents/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "digital-signature",
+          "title": "Documents",
+          "component": "app/digital-signatures/documents/page"
+        }
+      ],
+      "isGeneratedPlaceholder": true
+    },
+    {
+      "route": "/digital-signatures/dashboard",
+      "file": "app/digital-signatures/dashboard/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": true,
+      "moduleRegistryEntries": [
+        {
+          "moduleId": "digital-signature",
+          "title": "Signature Dashboard",
+          "component": "app/digital-signatures/dashboard/page"
+        }
+      ],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/demo/notifications",
+      "file": "app/demo/notifications/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/dashboard",
+      "file": "app/dashboard/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/dashboard/warehouse-head",
+      "file": "app/dashboard/warehouse-head/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/dashboard/supervisor",
+      "file": "app/dashboard/supervisor/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/dashboard/operations",
+      "file": "app/dashboard/operations/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/dashboard/customer",
+      "file": "app/dashboard/customer/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/dashboard/business-development",
+      "file": "app/dashboard/business-development/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/dashboard/account-manager",
+      "file": "app/dashboard/account-manager/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/d/sales-orders",
+      "file": "app/d/sales-orders/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/customs/declarations/[id]",
+      "file": "app/customs/declarations/[id]/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/customs/declarations/[id]/edit",
+      "file": "app/customs/declarations/[id]/edit/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/customer-portal/approve",
+      "file": "app/customer-portal/approve/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/customer-portal/approval-success",
+      "file": "app/customer-portal/approval-success/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/crm/opportunities",
+      "file": "app/crm/opportunities/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/crm/leads",
+      "file": "app/crm/leads/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/crm/forecast",
+      "file": "app/crm/forecast/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/crm/dashboard",
+      "file": "app/crm/dashboard/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/crm/contacts",
+      "file": "app/crm/contacts/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/crm/activities",
+      "file": "app/crm/activities/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/crm/accounts",
+      "file": "app/crm/accounts/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/business-intelligence/reports",
+      "file": "app/business-intelligence/reports/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/business-intelligence/data-warehouse",
+      "file": "app/business-intelligence/data-warehouse/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/business-intelligence/dashboard",
+      "file": "app/business-intelligence/dashboard/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/brand-messaging/test",
+      "file": "app/brand-messaging/test/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/boardroom-readiness",
+      "file": "app/boardroom-readiness/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/bluedxp-test",
+      "file": "app/bluedxp-test/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision-unified-enhanced",
+      "file": "app/ai-vision-unified-enhanced/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision-demo",
+      "file": "app/ai-vision-demo/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/learning",
+      "file": "app/ai-vision/learning/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/learning/rules",
+      "file": "app/ai-vision/learning/rules/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/learning/patterns",
+      "file": "app/ai-vision/learning/patterns/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/learning/how-it-works",
+      "file": "app/ai-vision/learning/how-it-works/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/learning/feedback",
+      "file": "app/ai-vision/learning/feedback/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/learning/accuracy",
+      "file": "app/ai-vision/learning/accuracy/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/integration/workflows",
+      "file": "app/ai-vision/integration/workflows/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/integration/settings",
+      "file": "app/ai-vision/integration/settings/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/integration/map",
+      "file": "app/ai-vision/integration/map/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/integration/actions",
+      "file": "app/ai-vision/integration/actions/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    },
+    {
+      "route": "/ai-vision/history/history",
+      "file": "app/ai-vision/history/history/page.tsx",
+      "inNavigation": false,
+      "inModuleRegistry": false,
+      "moduleRegistryEntries": [],
+      "isGeneratedPlaceholder": false
+    }
+  ],
+  "navLinksWithoutPages": [
+    "/ai/self-learning",
+    "/compliance/saudi-alignment",
+    "/global-compliance",
+    "/transportation/corridors",
+    "/transportation/psychology",
+    "/transportation/quantum",
+    "/truth-timeline"
+  ]
+}

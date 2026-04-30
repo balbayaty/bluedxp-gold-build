@@ -1,0 +1,58 @@
+# Codecov Configuration
+# Coverage reporting settings
+
+coverage:
+  status:
+    project:
+      default:
+        target: 70%
+        threshold: 1%
+        base: auto
+        branches:
+          - main
+          - develop
+    patch:
+      default:
+        target: 60%
+        threshold: 1%
+
+comment:
+  layout: "reach, diff, flags, files, footer"
+  behavior: default
+  require_changes: false
+  require_base: no
+  require_head: yes
+
+ignore:
+  - "**/*.test.ts"
+  - "**/*.test.tsx"
+  - "**/*.spec.ts"
+  - "**/*.spec.tsx"
+  - "**/__tests__/**"
+  - "**/node_modules/**"
+  - "**/.next/**"
+  - "**/coverage/**"
+  - "**/*.d.ts"
+
+flags:
+  unittests:
+    paths:
+      - lib/
+      - app/
+      - components/
+      - utils/
+      - hooks/
+    carryforward: true
+
+
+
+
+
+
+
+
+
+
+
+
+

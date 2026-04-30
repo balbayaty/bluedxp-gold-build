@@ -1,0 +1,556 @@
+{
+  "total": 137,
+  "existing": 137,
+  "missing": 0,
+  "missingPages": [],
+  "existingPages": [
+    {
+      "name": "Dashboard",
+      "href": "/"
+    },
+    {
+      "name": "Showcase",
+      "href": "/showcase"
+    },
+    {
+      "name": "Inbound Operations",
+      "href": "/inbound"
+    },
+    {
+      "name": "Outbound Operations",
+      "href": "/outbound"
+    },
+    {
+      "name": "Goods Receipt",
+      "href": "/goods-receipt"
+    },
+    {
+      "name": "Goods Issue",
+      "href": "/goods-issue"
+    },
+    {
+      "name": "Transfer Posting",
+      "href": "/transfer-posting"
+    },
+    {
+      "name": "Putaway",
+      "href": "/putaway"
+    },
+    {
+      "name": "Picking",
+      "href": "/picking"
+    },
+    {
+      "name": "Cycle Counting",
+      "href": "/cycle-counting"
+    },
+    {
+      "name": "Cross-Docking",
+      "href": "/cross-docking"
+    },
+    {
+      "name": "Task Management",
+      "href": "/task-management"
+    },
+    {
+      "name": "Stock Overview",
+      "href": "/inventory"
+    },
+    {
+      "name": "Material Master",
+      "href": "/skus"
+    },
+    {
+      "name": "Batch Management",
+      "href": "/batches"
+    },
+    {
+      "name": "Serial Number",
+      "href": "/serials"
+    },
+    {
+      "name": "Stock Valuation",
+      "href": "/valuation"
+    },
+    {
+      "name": "ABC Analysis",
+      "href": "/abc-analysis"
+    },
+    {
+      "name": "Stock Alerts",
+      "href": "/stock-alerts"
+    },
+    {
+      "name": "Expiry Management",
+      "href": "/expiry-management"
+    },
+    {
+      "name": "Reservations",
+      "href": "/reservations"
+    },
+    {
+      "name": "Replenishment",
+      "href": "/replenishment"
+    },
+    {
+      "name": "Purchase Orders",
+      "href": "/orders"
+    },
+    {
+      "name": "Sales Orders",
+      "href": "/sales-orders"
+    },
+    {
+      "name": "Order Confirmation",
+      "href": "/order-confirmation"
+    },
+    {
+      "name": "Pick Release",
+      "href": "/pick-release"
+    },
+    {
+      "name": "Wave Planning",
+      "href": "/wave-planning"
+    },
+    {
+      "name": "Load Planning",
+      "href": "/load-planning"
+    },
+    {
+      "name": "Ship Confirmation",
+      "href": "/ship-confirmation"
+    },
+    {
+      "name": "Delivery Note",
+      "href": "/delivery-note"
+    },
+    {
+      "name": "Return Management",
+      "href": "/return-management"
+    },
+    {
+      "name": "Carrier Management",
+      "href": "/carriers"
+    },
+    {
+      "name": "Pickup Requests",
+      "href": "/pickup-requests"
+    },
+    {
+      "name": "Shipment Tracking",
+      "href": "/tracking"
+    },
+    {
+      "name": "Route Optimization",
+      "href": "/routes"
+    },
+    {
+      "name": "Freight Management",
+      "href": "/freight"
+    },
+    {
+      "name": "Proof of Delivery",
+      "href": "/pod"
+    },
+    {
+      "name": "Transportation Dashboard",
+      "href": "/transportation"
+    },
+    {
+      "name": "Multi-Modal Transport",
+      "href": "/transportation/multimodal"
+    },
+    {
+      "name": "Sea Freight",
+      "href": "/transportation/sea"
+    },
+    {
+      "name": "Air Freight",
+      "href": "/transportation/air"
+    },
+    {
+      "name": "Rail Freight",
+      "href": "/transportation/rail"
+    },
+    {
+      "name": "Customs Management",
+      "href": "/transportation/customs"
+    },
+    {
+      "name": "Customs Declarations",
+      "href": "/transportation/customs/declarations"
+    },
+    {
+      "name": "Customs Brokers",
+      "href": "/transportation/customs/brokers"
+    },
+    {
+      "name": "Ports & Terminals",
+      "href": "/transportation/ports"
+    },
+    {
+      "name": "Insurance",
+      "href": "/transportation/insurance"
+    },
+    {
+      "name": "Transportation Analytics",
+      "href": "/transportation/analytics"
+    },
+    {
+      "name": "Integration Settings",
+      "href": "/transportation/integration"
+    },
+    {
+      "name": "Proposals & Reports",
+      "href": "/transportation/proposals"
+    },
+    {
+      "name": "Proposals Dashboard",
+      "href": "/proposals"
+    },
+    {
+      "name": "RFQ Management",
+      "href": "/proposals/rfq"
+    },
+    {
+      "name": "New RFQ",
+      "href": "/proposals/rfq/new"
+    },
+    {
+      "name": "Create Proposal",
+      "href": "/proposals/new"
+    },
+    {
+      "name": "Templates",
+      "href": "/proposals/templates"
+    },
+    {
+      "name": "Service Catalog",
+      "href": "/proposals/services"
+    },
+    {
+      "name": "Rate Cards",
+      "href": "/proposals/rate-cards"
+    },
+    {
+      "name": "Journey Analysis",
+      "href": "/proposals/journey"
+    },
+    {
+      "name": "Train Schedules",
+      "href": "/proposals/train-schedules"
+    },
+    {
+      "name": "Analytics",
+      "href": "/proposals/analytics"
+    },
+    {
+      "name": "ISO IMS Dashboard",
+      "href": "/iso-ims"
+    },
+    {
+      "name": "CAPA Management",
+      "href": "/capa-management"
+    },
+    {
+      "name": "NCR Management",
+      "href": "/ncr-management"
+    },
+    {
+      "name": "Audit Management",
+      "href": "/audit-management"
+    },
+    {
+      "name": "Document Center",
+      "href": "/document-center"
+    },
+    {
+      "name": "Risk Management",
+      "href": "/risk-management"
+    },
+    {
+      "name": "Training Management",
+      "href": "/training-management"
+    },
+    {
+      "name": "My Tasks",
+      "href": "/my-tasks"
+    },
+    {
+      "name": "Approvals",
+      "href": "/approvals"
+    },
+    {
+      "name": "Inspection Lots",
+      "href": "/inspection-lots"
+    },
+    {
+      "name": "Damage Reports",
+      "href": "/damage"
+    },
+    {
+      "name": "Quality Certificates",
+      "href": "/certificates"
+    },
+    {
+      "name": "Hold Management",
+      "href": "/holds"
+    },
+    {
+      "name": "Material Master",
+      "href": "/materials"
+    },
+    {
+      "name": "Vendor Master",
+      "href": "/vendors"
+    },
+    {
+      "name": "Customer Master",
+      "href": "/customers"
+    },
+    {
+      "name": "Storage Location",
+      "href": "/storage-locations"
+    },
+    {
+      "name": "Bin Master",
+      "href": "/bins"
+    },
+    {
+      "name": "Work Center",
+      "href": "/work-centers"
+    },
+    {
+      "name": "Resource Master",
+      "href": "/resources"
+    },
+    {
+      "name": "AI Vision Inspector",
+      "href": "/ai-vision"
+    },
+    {
+      "name": "Analysis History",
+      "href": "/ai-vision/history"
+    },
+    {
+      "name": "MSDS Complete",
+      "href": "/msds"
+    },
+    {
+      "name": "MSDS Intelligence",
+      "href": "/msds-intelligence"
+    },
+    {
+      "name": "QHSE Dashboard (Legacy - Redirects)",
+      "href": "/qhse-dashboard"
+    },
+    {
+      "name": "Process Mining",
+      "href": "/intelligent-orchestration/process-mining"
+    },
+    {
+      "name": "Root Cause Analysis",
+      "href": "/intelligent-orchestration/root-cause"
+    },
+    {
+      "name": "Predictive Analytics",
+      "href": "/intelligent-orchestration/predictive"
+    },
+    {
+      "name": "Communication Orchestration",
+      "href": "/intelligent-orchestration/communication"
+    },
+    {
+      "name": "Autonomous Compliance",
+      "href": "/intelligent-orchestration/compliance"
+    },
+    {
+      "name": "Automated Insights",
+      "href": "/intelligent-orchestration/insights"
+    },
+    {
+      "name": "SLA Management",
+      "href": "/sla-kpi"
+    },
+    {
+      "name": "KPI Dashboard",
+      "href": "/kpi-dashboard"
+    },
+    {
+      "name": "SLA Reports",
+      "href": "/reports"
+    },
+    {
+      "name": "Modern SLA Framework",
+      "href": "/modern-sla"
+    },
+    {
+      "name": "Customer Dashboard",
+      "href": "/customer-dashboard"
+    },
+    {
+      "name": "Overtime Tracking",
+      "href": "/overtime"
+    },
+    {
+      "name": "Operational Reports",
+      "href": "/reports/operational"
+    },
+    {
+      "name": "Inventory Reports",
+      "href": "/reports/inventory"
+    },
+    {
+      "name": "Order Reports",
+      "href": "/reports/orders"
+    },
+    {
+      "name": "Performance Reports",
+      "href": "/reports/performance"
+    },
+    {
+      "name": "Financial Reports",
+      "href": "/reports/financial"
+    },
+    {
+      "name": "Custom Reports",
+      "href": "/reports/custom"
+    },
+    {
+      "name": "Data Mining",
+      "href": "/data-mining"
+    },
+    {
+      "name": "ERP Integration",
+      "href": "/integration/erp"
+    },
+    {
+      "name": "EDI Integration",
+      "href": "/integration/edi"
+    },
+    {
+      "name": "API Management",
+      "href": "/integration/api"
+    },
+    {
+      "name": "Carrier Integration",
+      "href": "/integration/carriers"
+    },
+    {
+      "name": "Benchmarks",
+      "href": "/integration/benchmarks"
+    },
+    {
+      "name": "Label Printing",
+      "href": "/integration/labels"
+    },
+    {
+      "name": "MaaS Dashboard",
+      "href": "/manufacturing"
+    },
+    {
+      "name": "Production Orders",
+      "href": "/manufacturing/production-orders"
+    },
+    {
+      "name": "Work Orders",
+      "href": "/manufacturing/work-orders"
+    },
+    {
+      "name": "Capacity Planning",
+      "href": "/manufacturing/capacity-planning"
+    },
+    {
+      "name": "Shop Floor Control",
+      "href": "/manufacturing/shop-floor"
+    },
+    {
+      "name": "Quality Control",
+      "href": "/manufacturing/quality-control"
+    },
+    {
+      "name": "Bill of Materials",
+      "href": "/manufacturing/bom"
+    },
+    {
+      "name": "Routing & Operations",
+      "href": "/manufacturing/routing"
+    },
+    {
+      "name": "MaaS Analytics",
+      "href": "/manufacturing/analytics"
+    },
+    {
+      "name": "Compliance Dashboard",
+      "href": "/compliance"
+    },
+    {
+      "name": "Trade Compliance Dashboard",
+      "href": "/trade-compliance"
+    },
+    {
+      "name": "Compliance Records",
+      "href": "/trade-compliance/records"
+    },
+    {
+      "name": "Create Record",
+      "href": "/trade-compliance/create"
+    },
+    {
+      "name": "License Management",
+      "href": "/trade-compliance/licenses"
+    },
+    {
+      "name": "Civil Defense",
+      "href": "/trade-compliance/civil-defense"
+    },
+    {
+      "name": "SFDA Licenses",
+      "href": "/trade-compliance/sfda"
+    },
+    {
+      "name": "Landed Cost Calculator",
+      "href": "/trade-compliance/landed-costs"
+    },
+    {
+      "name": "Process Flows",
+      "href": "/trade-compliance/process-flows"
+    },
+    {
+      "name": "Warehouse Setup",
+      "href": "/settings/warehouse"
+    },
+    {
+      "name": "User Management",
+      "href": "/settings/users"
+    },
+    {
+      "name": "Workflow Engine",
+      "href": "/settings/workflow"
+    },
+    {
+      "name": "Notification Rules",
+      "href": "/settings/notifications"
+    },
+    {
+      "name": "Print Templates",
+      "href": "/settings/templates"
+    },
+    {
+      "name": "System Parameters",
+      "href": "/settings/parameters"
+    },
+    {
+      "name": "AI & Agents",
+      "href": "/settings/ai"
+    },
+    {
+      "name": "Adaptive Accessibility",
+      "href": "/settings/accessibility"
+    },
+    {
+      "name": "All Settings",
+      "href": "/settings"
+    }
+  ]
+}

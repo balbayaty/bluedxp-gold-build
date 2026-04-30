@@ -1,0 +1,3227 @@
+{
+  "summary": {
+    "totalPages": 576,
+    "visiblePages": 475,
+    "invisiblePages": 101,
+    "navigationLinks": 369
+  },
+  "invisiblePages": [
+    {
+      "route": "/approvals",
+      "path": "app/approvals/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/asn/showcase",
+      "path": "app/asn/showcase/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/audit-trail",
+      "path": "app/audit-trail/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/bluedxp-test",
+      "path": "app/bluedxp-test/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/boardroom-readiness",
+      "path": "app/boardroom-readiness/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/brain-debug",
+      "path": "app/brain-debug/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/brand-messaging/test",
+      "path": "app/brand-messaging/test/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/business-intelligence/dashboard",
+      "path": "app/business-intelligence/dashboard/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/business-intelligence/data-warehouse",
+      "path": "app/business-intelligence/data-warehouse/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/business-intelligence/reports",
+      "path": "app/business-intelligence/reports/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/chemical-compliance",
+      "path": "app/chemical-compliance/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/chemical-safety/hazards",
+      "path": "app/chemical-safety/hazards/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/chemical-safety/sds-analysis",
+      "path": "app/chemical-safety/sds-analysis/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/chemical-training",
+      "path": "app/chemical-training/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/client/proposals/[id]",
+      "path": "app/client/proposals/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Redirects to: /client/proposals/${proposalId}/sign",
+        "Dynamic route with no navigation or code links"
+      ],
+      "redirectsTo": "/client/proposals/${proposalId}/sign"
+    },
+    {
+      "route": "/client/proposals/[id]/sign",
+      "path": "app/client/proposals/[id]/sign/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Redirects to: /client/proposals/${proposalId}?signed=true",
+        "Dynamic route with no navigation or code links"
+      ],
+      "redirectsTo": "/client/proposals/${proposalId}?signed=true"
+    },
+    {
+      "route": "/crm/accounts",
+      "path": "app/crm/accounts/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/crm/activities",
+      "path": "app/crm/activities/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/crm/contacts",
+      "path": "app/crm/contacts/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/crm/dashboard",
+      "path": "app/crm/dashboard/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/crm/forecast",
+      "path": "app/crm/forecast/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/crm/leads",
+      "path": "app/crm/leads/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/crm/opportunities",
+      "path": "app/crm/opportunities/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/customer-portal/approve",
+      "path": "app/customer-portal/approve/page.tsx",
+      "reasons": [
+        "Redirects to: /customer-portal/approval-success",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/customer-portal/approval-success"
+    },
+    {
+      "route": "/customers/branding",
+      "path": "app/customers/branding/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/d/sales-orders",
+      "path": "app/d/sales-orders/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/dashboard/account-manager",
+      "path": "app/dashboard/account-manager/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/dashboard/business-development",
+      "path": "app/dashboard/business-development/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/dashboard/customer",
+      "path": "app/dashboard/customer/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/dashboard/operations",
+      "path": "app/dashboard/operations/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/dashboard/supervisor",
+      "path": "app/dashboard/supervisor/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/dashboard/system-admin",
+      "path": "app/dashboard/system-admin/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/dashboard/transport-general-manager",
+      "path": "app/dashboard/transport-general-manager/page.tsx",
+      "reasons": [
+        "Redirects to: /transportation",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/transportation"
+    },
+    {
+      "route": "/debug/modules",
+      "path": "app/debug/modules/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/demo/notifications",
+      "path": "app/demo/notifications/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/etw/verify/[token]",
+      "path": "app/etw/verify/[token]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Dynamic route with no navigation or code links"
+      ]
+    },
+    {
+      "route": "/etw/[id]/edit",
+      "path": "app/etw/[id]/edit/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Redirects to: /etw/${etwId}",
+        "Dynamic route with no navigation or code links"
+      ],
+      "redirectsTo": "/etw/${etwId}"
+    },
+    {
+      "route": "/etw/[id]",
+      "path": "app/etw/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Redirects to: /etw/${etwId}/print",
+        "Dynamic route with no navigation or code links"
+      ],
+      "redirectsTo": "/etw/${etwId}/print"
+    },
+    {
+      "route": "/etw/[id]/print",
+      "path": "app/etw/[id]/print/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Dynamic route with no navigation or code links"
+      ]
+    },
+    {
+      "route": "/facility/sentinel",
+      "path": "app/facility/sentinel/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/facility/utility-bills/comparison",
+      "path": "app/facility/utility-bills/comparison/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/facility/utility-bills/[id]",
+      "path": "app/facility/utility-bills/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Dynamic route with no navigation or code links"
+      ]
+    },
+    {
+      "route": "/feature-demo",
+      "path": "app/feature-demo/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/feature-registry",
+      "path": "app/feature-registry/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/iot/network/topology",
+      "path": "app/iot/network/topology/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/iso-ims/intelligence",
+      "path": "app/iso-ims/intelligence/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/jobs/quick-start",
+      "path": "app/jobs/quick-start/page.tsx",
+      "reasons": [
+        "Redirects to: /jobs?jobId=${job.id}",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/jobs?jobId=${job.id}"
+    },
+    {
+      "route": "/liability/assessments/[id]",
+      "path": "app/liability/assessments/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Redirects to: /liability/claims/new?assessment=${assessmentId}",
+        "Dynamic route with no navigation or code links"
+      ],
+      "redirectsTo": "/liability/claims/new?assessment=${assessmentId}"
+    },
+    {
+      "route": "/liability/claims/[id]",
+      "path": "app/liability/claims/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Dynamic route with no navigation or code links"
+      ]
+    },
+    {
+      "route": "/maas",
+      "path": "app/maas/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/marketplace/analytics",
+      "path": "app/marketplace/analytics/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/marketplace/contracts/[id]",
+      "path": "app/marketplace/contracts/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Redirects to: /marketplace/contracts/${contractId}/sign",
+        "Dynamic route with no navigation or code links"
+      ],
+      "redirectsTo": "/marketplace/contracts/${contractId}/sign"
+    },
+    {
+      "route": "/marketplace/favorites",
+      "path": "app/marketplace/favorites/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/marketplace/listings/[id]",
+      "path": "app/marketplace/listings/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Redirects to: /marketplace/bookings/new?serviceId=${listingId}",
+        "Dynamic route with no navigation or code links"
+      ],
+      "redirectsTo": "/marketplace/bookings/new?serviceId=${listingId}"
+    },
+    {
+      "route": "/marketplace/matching/[id]",
+      "path": "app/marketplace/matching/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Dynamic route with no navigation or code links"
+      ]
+    },
+    {
+      "route": "/marketplace/messages",
+      "path": "app/marketplace/messages/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/marketplace/payment",
+      "path": "app/marketplace/payment/page.tsx",
+      "reasons": [
+        "Redirects to: /marketplace/bookings/${bookingId}?payment=success",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/marketplace/bookings/${bookingId}?payment=success"
+    },
+    {
+      "route": "/marketplace/pricing/[listingId]",
+      "path": "app/marketplace/pricing/[listingId]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Dynamic route with no navigation or code links"
+      ]
+    },
+    {
+      "route": "/marketplace/providers/verify",
+      "path": "app/marketplace/providers/verify/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/marketplace/sustainability",
+      "path": "app/marketplace/sustainability/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/msds-intelligence",
+      "path": "app/msds-intelligence/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/msds-sku-linking/analytics",
+      "path": "app/msds-sku-linking/analytics/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/msds-sku-linking/bulk",
+      "path": "app/msds-sku-linking/bulk/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/msds-sku-linking",
+      "path": "app/msds-sku-linking/page.tsx",
+      "reasons": [
+        "Redirects to: /login",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/login"
+    },
+    {
+      "route": "/my-capa-workspace",
+      "path": "app/my-capa-workspace/page.tsx",
+      "reasons": [
+        "Redirects to: /capa-management?create=true",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/capa-management?create=true"
+    },
+    {
+      "route": "/my-tasks",
+      "path": "app/my-tasks/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/projects/[id]",
+      "path": "app/projects/[id]/page.tsx",
+      "reasons": [
+        "Dynamic route - base route not in navigation",
+        "Dynamic route with no navigation or code links"
+      ]
+    },
+    {
+      "route": "/proposals/analytics/enhanced",
+      "path": "app/proposals/analytics/enhanced/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/proposals/compare",
+      "path": "app/proposals/compare/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/proposals/enhanced",
+      "path": "app/proposals/enhanced/page.tsx",
+      "reasons": [
+        "Redirects to: /proposals/${id}",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/proposals/${id}"
+    },
+    {
+      "route": "/proposals/marketplace",
+      "path": "app/proposals/marketplace/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/qhse/analytics",
+      "path": "app/qhse/analytics/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/qhse/comprehensive",
+      "path": "app/qhse/comprehensive/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/qhse/custom-fields",
+      "path": "app/qhse/custom-fields/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/qhse/templates",
+      "path": "app/qhse/templates/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/qhse/webhooks",
+      "path": "app/qhse/webhooks/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/qhse-dashboard",
+      "path": "app/qhse-dashboard/page.tsx",
+      "reasons": [
+        "Redirects to: /qhse/dashboard",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/qhse/dashboard"
+    },
+    {
+      "route": "/test-notifications",
+      "path": "app/test-notifications/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/test-page",
+      "path": "app/test-page/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/analytics/digital-twins",
+      "path": "app/transportation/analytics/digital-twins/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/analytics/scenario",
+      "path": "app/transportation/analytics/scenario/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/carrier-portal",
+      "path": "app/transportation/carrier-portal/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/collaboration",
+      "path": "app/transportation/collaboration/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/control-tower",
+      "path": "app/transportation/control-tower/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/corridors",
+      "path": "app/transportation/corridors/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/customization",
+      "path": "app/transportation/customization/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/digital-twins",
+      "path": "app/transportation/digital-twins/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/edge-computing",
+      "path": "app/transportation/edge-computing/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/exports",
+      "path": "app/transportation/exports/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/multi-enterprise",
+      "path": "app/transportation/multi-enterprise/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/payments",
+      "path": "app/transportation/payments/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/psychology",
+      "path": "app/transportation/psychology/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/quantum",
+      "path": "app/transportation/quantum/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/transportation/quotes",
+      "path": "app/transportation/quotes/page.tsx",
+      "reasons": [
+        "Redirects to: /shipments/${q.shipmentId}",
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ],
+      "redirectsTo": "/shipments/${q.shipmentId}"
+    },
+    {
+      "route": "/transportation/test",
+      "path": "app/transportation/test/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/truth-engine/claims",
+      "path": "app/truth-engine/claims/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/truth-engine/dashboard",
+      "path": "app/truth-engine/dashboard/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/truth-engine/knowledge-graph",
+      "path": "app/truth-engine/knowledge-graph/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/warehouse-network/cross-docking",
+      "path": "app/warehouse-network/cross-docking/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/warehouse-network/optimization",
+      "path": "app/warehouse-network/optimization/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    },
+    {
+      "route": "/websocket/streams",
+      "path": "app/websocket/streams/page.tsx",
+      "reasons": [
+        "Not in navigation menu",
+        "Not linked in code (router.push, Link, etc.)"
+      ]
+    }
+  ],
+  "visiblePages": [
+    {
+      "route": "/abc-analysis",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/admin/qr-analytics/cross-module",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/admin/qr-analytics/detailed",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/admin/qr-analytics/executive",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/admin/qr-analytics/operational",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/admin/qr-analytics",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/admin/qr-analytics/realtime",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/admin/qr-analytics/revolutionary",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/agent-orchestration",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/agents/showcase",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai/arabic-nlp",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/ai/insights",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/ai/recommendations",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/ai/self-learning",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/ai-vision/anomalies",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/batch",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/chemical",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/healthcare",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/history/history",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/history",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/integration/actions",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/integration/map",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/integration/settings",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/integration/workflows",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/learning/accuracy",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/learning/feedback",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/learning/how-it-works",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/learning",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/learning/patterns",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/learning/rules",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/logistics",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/manufacturing",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/scene",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/stream",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/tracking",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision/video",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision-demo",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision-unified",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ai-vision-unified-enhanced",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/analytics/unified",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/asn/dashboard",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/asn",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/audit-management",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/batches",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/bins",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/bluedxp-executive",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/bluedxp-innovation",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/bluedxp-modules",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/bluedxp-saudi",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/brand-messaging",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/capa-management",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/carriers",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/certificates",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/chemical-database",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/chemical-incidents",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/chemical-inventory/containers",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/chemical-inventory",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/chemical-safety/compatibility",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/chemical-safety/risk-assessment",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/compliance",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/compliance/saudi-alignment",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/compliance/tools/knowledge",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/compliance/tools/requirement-builder",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/cross-docking",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/customer-dashboard",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/customer-portal/approval-success",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/customers",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/customs/adapters",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/customs/analytics",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/customs/compliance",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/customs/dashboard",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/customs/declarations",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/customs/declarations/[id]/edit",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/customs/declarations/[id]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/customs/documents",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/customs/tir",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/customs/touchpoints",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/cycle-counting",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/damage",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/dashboard",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/dashboard/warehouse-head",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/dashboards/executive",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/dashboards/ml-analytics",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/dashboards",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/dashboards/ultimate",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/dashboards/vision-realtime",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/dashboards/warehouse/realtime",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/dashboards/widgets",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/data-mining",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/decision-infrastructure/analytics",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/decision-infrastructure/controls",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/decision-infrastructure",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/decision-infrastructure/workflows",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/delivery-note",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/digital-signatures/dashboard",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/digital-signatures/documents",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/digital-signatures",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/dmarc-monitoring",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/dmarc-monitoring/reports",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/dmarc-monitoring/reputation",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/document-center",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/etw/create",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/etw",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/event-store",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/evidence/packets",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/evidence",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/expiry-management",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/export-house/application",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/export-house/business-plan",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/export-house/compliance",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/export-house",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/facility/abalady",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/analytics",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/assets",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/facility/assets/[id]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/bim",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/cad",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/civil-defense",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/dashboard",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/facility/digital-twin",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/energy",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/iot",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/licenses",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/maintenance",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/regulatory",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/spaces",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility/utility-bills/analytics",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/facility/utility-bills",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/facility/work-orders",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/facility/work-orders/[id]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/facility-mapping",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/feature-intelligence",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/accounts-payable",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/finance/accounts-receivable",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/finance/audit-trail",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/bank-reconciliation",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/budget",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/consolidation",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/cost-accounting",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/dashboard",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/fixed-assets",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/fpa",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/general-ledger",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/finance/integrations",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/multi-currency",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/period-closing",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/reports",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/finance/tax",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/finance/treasury",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/freight",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/global-compliance",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/goods-issue",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/goods-receipt",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/graph",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/hazalyze",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/holds",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/home",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/hr/attendance",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/hr/employees",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/hr",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/hr/payroll",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/hr/training",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/ict-hardware-ecosystem/manufacturing",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ict-hardware-ecosystem",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ict-hardware-ecosystem/partnerships",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ict-hardware-ecosystem/products",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/inbound",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/incident-report",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/inspection-checklist",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/inspection-lots",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integration/api",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integration/benchmarks",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integration/carriers",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integration/edi",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integration/erp",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integration/erpnext/compliance",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/integration/erpnext/inventory",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/integration/erpnext/materials",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/integration/labels",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integration",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integration/webhooks",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/integration/whatsapp",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/integrations/callback",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/integrations",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/intelligent-orchestration/communication",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/intelligent-orchestration/compliance",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/intelligent-orchestration/insights",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/intelligent-orchestration/predictive",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/intelligent-orchestration/process-mining",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/intelligent-orchestration/root-cause",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/inventory",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/iot/analytics",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/iot/device-discovery",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/iot/device-groups",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/iot/devices",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/iot/edge-ai",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/iot/network",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/iot/network-topology",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/iot",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/iso-ims",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/jobs/analytics",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/jobs",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/knowledge-base",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/kpi-dashboard",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/landing",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/liability/assessments",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/liability/calculator",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/liability/claims/new",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/liability/claims",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/liability/compliance",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/liability/dashboard",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/liability/rules/new",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/liability/rules",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/llm-providers",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/load-design/analytics",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/load-design",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/load-planning",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/login",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/maas/pillars",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/maas/revenue",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/maas/tenants",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing/analytics",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing/bom",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing/capacity-planning",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing/production-orders",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing/quality-control",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing/routing",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing/shop-floor",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/manufacturing/work-orders",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/marketplace/bookings/new",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/bookings",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/bookings/[id]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/marketplace/bookings/[id]/review",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/marketplace/compare",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/consulting",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/contracts",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/crossdocking",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/forecasting",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/freight",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/listings/new",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/manpower",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/providers/bookings",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/providers/dashboard",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/marketplace/providers",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/providers/register",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/reviews",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/marketplace/search",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/storage",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/translation",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/marketplace/transportation",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/materials",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ml-registry",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/modern-sla",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/msds",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ncr",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ncr-management",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/offline",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/opc-ua-monitoring/machines",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/opc-ua-monitoring/oee",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/opc-ua-monitoring",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/order-confirmation",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/orders",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/outbound",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/outbound/picking",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/overtime",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/performance-center",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/analytics",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/approvals",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/audit",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/builder",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/compliance",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/export-import",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/heatmap",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/impact",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/inheritance",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/migration",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/monitor",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/optimization",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/security",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/permissions/testing",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/pick-release",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/picking",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/pickup-requests",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/playbook",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/pod",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/predictive-maintenance",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/premium",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle/analytics",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle/document-processor",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle/lifecycle",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle/process-mining",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle/unified-journey",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle/workflows/builder",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle/workflows",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/process-lifecycle/workflows/[workflowId]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/projects",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/analytics",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/journey",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/new",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/rate-cards",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/proposals/rfq/new",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/rfq",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/services",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/templates",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/train-schedules",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/proposals/[id]/benchmark",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/proposals/[id]/enhanced",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/proposals/[id]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/pulse/admin",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/pulse/admin/redemptions",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/pulse/admin/rulesets",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/pulse/benchmark",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/pulse/leaderboards",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/pulse/missions",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/pulse",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/pulse/profile",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/pulse/recognition",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/pulse/rewards",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/purchase-orders",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/putaway",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/approvals",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/bulk",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/calendar",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/dashboard",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/dashboard/realtime",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/qhse/environmental",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/esg",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/incidents/new",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/incidents",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/inspections/new",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/inspections",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/regulatory",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/safety-metrics",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/search",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/statistics",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/training/new",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qhse/training",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/qr-demo",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/replenishment",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/reporting",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/reports/custom",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/reports/financial",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/reports/inventory",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/reports/operational",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/reports/orders",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/reports",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/reports/performance",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/reservations",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/resources",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/return-management",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/risk-management",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/routes",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/sales-orders",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/serials",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/accessibility",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/ai",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/currency",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/module-management",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/notifications",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/parameters",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/templates",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/users",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/warehouse",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/settings/workflow",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/ship-confirmation",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/shipments",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/showcase",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/skus",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/sla-kpi",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/stock-alerts",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/storage-locations",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/task-management",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/tasks",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/tracking",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/civil-defense",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/create",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/documents",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/trade-compliance/landed-costs",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/licenses/apply",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/licenses",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/process-flows",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/records",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/sfda",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/trade-compliance/workflows",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/training-management",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transfer-posting",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/air",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/analytics/bottleneck",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/analytics/last-mile",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/analytics/load-building",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/analytics/monte-carlo",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/analytics/network",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/analytics/optimization",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/analytics",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/analytics/sustainability",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/analytics/touchpoint-explorer",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/audit",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/blockchain",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/capabilities",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/carriers",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/compliance",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/customs/authorities",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/customs/brokers",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/customs/declarations",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/customs",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/dashboard",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/documents/enterprise",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/documents",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/emissions",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/fleet",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/geofences",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/incidents",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/insurance",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/integration",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/integration/zoho",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/intelligent-routing",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/iot",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/journey-analysis",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/last-mile",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/load-building",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/load-matching",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/multimodal",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/network-modeling",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/ports",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/pricing",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/proposals",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/proposals/[id]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/rail",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/transportation/realtime",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/route-comparison",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/route-optimization",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/scenario-simulation",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/transportation/sea",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/truth-board",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/truth-timeline",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/truth-timeline/[entityType]/[entityId]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/ultimate",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/unified/customer-center",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/unified/document-center",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/unified/qhse-center",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/user-management",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/users",
+      "inNavigation": false,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/valuation",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/vendors",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-areas",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-locations",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/warehouse-network/analytics",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-network/networks/new",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-network/networks",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-network/networks/[id]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/warehouse-network",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-network/routes/new",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-network/routes",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-network/transfers/new",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouse-network/transfers",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouses",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/warehouses/[id]/equipment/[equipmentId]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/warehouses/[id]/inventory/[itemId]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/warehouses/[id]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/warehouses/[id]/sensors/[sensorId]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/warehouses/[id]/tasks/[taskId]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/warehouses/[id]/zones/[zoneId]",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/wave-planning",
+      "inNavigation": true,
+      "inCodeLinks": true
+    },
+    {
+      "route": "/wms-features",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/wms-process-lifecycle",
+      "inNavigation": true,
+      "inCodeLinks": false
+    },
+    {
+      "route": "/work-centers",
+      "inNavigation": true,
+      "inCodeLinks": true
+    }
+  ]
+}

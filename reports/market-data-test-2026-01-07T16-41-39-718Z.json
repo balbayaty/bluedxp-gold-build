@@ -1,0 +1,812 @@
+{
+  "timestamp": "2026-01-07T16:41:39.753Z",
+  "summary": {
+    "total": 12,
+    "passed": 12,
+    "warnings": 0,
+    "failed": 0
+  },
+  "results": [
+    {
+      "name": "API Health Check",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": {
+        "status": "OK",
+        "message": "Market Data API is working!",
+        "apiKeyConfigured": true,
+        "apiKeyPreview": "HFN6...I0B1",
+        "timestamp": "2026-01-07T16:40:33.219Z"
+      }
+    },
+    {
+      "name": "Stock Quotes (FDX, UPS)",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": {
+        "quotes": [
+          {
+            "symbol": "FDX",
+            "name": "FDX",
+            "exchange": "UNKNOWN",
+            "price": 307.93,
+            "currency": "USD",
+            "change": 10.47,
+            "changePercent": 3.5198,
+            "volume": 3027170,
+            "high": 308.1,
+            "low": 297.13,
+            "open": 297.13,
+            "previousClose": 297.46,
+            "timestamp": "2026-01-06T00:00:00.000Z",
+            "provider": "alpha_vantage"
+          },
+          {
+            "symbol": "UPS",
+            "name": "UPS Inc.",
+            "exchange": "NASDAQ",
+            "price": 145.48638064826605,
+            "currency": "USD",
+            "change": -0.053563718202125354,
+            "changePercent": -0.0368169982395969,
+            "volume": 9825157,
+            "high": 146.2687498306113,
+            "low": 145.0254139623235,
+            "open": 145.55215296474805,
+            "previousClose": 145.53994436646818,
+            "timestamp": "2026-01-07T16:40:34.584Z",
+            "provider": "alpha_vantage"
+          }
+        ],
+        "timestamp": "2026-01-07T16:40:34.837Z",
+        "cacheHit": false
+      }
+    },
+    {
+      "name": "Logistics Companies Bundle",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": {
+        "quotes": [
+          {
+            "symbol": "FDX",
+            "name": "FDX",
+            "exchange": "UNKNOWN",
+            "price": 307.93,
+            "currency": "USD",
+            "change": 10.47,
+            "changePercent": 3.5198,
+            "volume": 3027170,
+            "high": 308.1,
+            "low": 297.13,
+            "open": 297.13,
+            "previousClose": 297.46,
+            "timestamp": "2026-01-06T00:00:00.000Z",
+            "provider": "alpha_vantage"
+          },
+          {
+            "symbol": "UPS",
+            "name": "UPS Inc.",
+            "exchange": "NASDAQ",
+            "price": 232.0369780503467,
+            "currency": "USD",
+            "change": -3.15573242051311,
+            "changePercent": -1.3600127216914488,
+            "volume": 4662176,
+            "high": 236.07812086448308,
+            "low": 230.24602961002515,
+            "open": 232.69365762473637,
+            "previousClose": 235.19271047085982,
+            "timestamp": "2026-01-07T16:40:38.300Z",
+            "provider": "alpha_vantage"
+          },
+          {
+            "symbol": "CHRW",
+            "name": "CHRW",
+            "exchange": "UNKNOWN",
+            "price": 167.66,
+            "currency": "USD",
+            "change": 0.45,
+            "changePercent": 0.2691,
+            "volume": 1205244,
+            "high": 168.17,
+            "low": 165.795,
+            "open": 166.98,
+            "previousClose": 167.21,
+            "timestamp": "2026-01-06T00:00:00.000Z",
+            "provider": "alpha_vantage"
+          }
+        ],
+        "profiles": {
+          "FDX": {
+            "symbol": "FDX",
+            "name": "FDX Corporation",
+            "description": "Mock profile for FDX",
+            "sector": "Transportation",
+            "industry": "Air Freight & Logistics",
+            "country": "USA",
+            "exchange": "NASDAQ",
+            "currency": "USD",
+            "marketCap": 25301821601,
+            "relevanceScore": 75
+          },
+          "UPS": {
+            "symbol": "UPS",
+            "name": "UPS Corporation",
+            "description": "Mock profile for UPS",
+            "sector": "Transportation",
+            "industry": "Air Freight & Logistics",
+            "country": "USA",
+            "exchange": "NASDAQ",
+            "currency": "USD",
+            "marketCap": 64318517181,
+            "relevanceScore": 75
+          },
+          "CHRW": {
+            "symbol": "CHRW",
+            "name": "CHRW Corporation",
+            "description": "Mock profile for CHRW",
+            "sector": "Transportation",
+            "industry": "Air Freight & Logistics",
+            "country": "USA",
+            "exchange": "NASDAQ",
+            "currency": "USD",
+            "marketCap": 90646492905,
+            "relevanceScore": 75
+          },
+          "EXPD": {
+            "symbol": "EXPD",
+            "name": "EXPD Corporation",
+            "description": "Mock profile for EXPD",
+            "sector": "Transportation",
+            "industry": "Air Freight & Logistics",
+            "country": "USA",
+            "exchange": "NASDAQ",
+            "currency": "USD",
+            "marketCap": 46284106133,
+            "relevanceScore": 75
+          },
+          "XPO": {
+            "symbol": "XPO",
+            "name": "XPO Corporation",
+            "description": "Mock profile for XPO",
+            "sector": "Transportation",
+            "industry": "Air Freight & Logistics",
+            "country": "USA",
+            "exchange": "NASDAQ",
+            "currency": "USD",
+            "marketCap": 86668625645,
+            "relevanceScore": 75
+          }
+        },
+        "timestamp": "2026-01-07T16:40:39.869Z",
+        "cacheHit": false
+      }
+    },
+    {
+      "name": "Commodity Prices",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": [
+        {
+          "commodity": "CL=F",
+          "category": "energy",
+          "price": 60.06,
+          "unit": "per unit",
+          "currency": "USD",
+          "change": -0.8299999999999983,
+          "changePercent": -1.3631138117917527,
+          "timestamp": "2025-11-01T00:00:00.000Z",
+          "provider": "alpha_vantage"
+        },
+        {
+          "commodity": "BZ=F",
+          "category": "energy",
+          "price": 98.19264588736759,
+          "unit": "per unit",
+          "currency": "USD",
+          "change": -1.8073541126324166,
+          "changePercent": -1.8073541126324164,
+          "timestamp": "2026-01-07T16:40:48.272Z",
+          "provider": "alpha_vantage"
+        },
+        {
+          "commodity": "NG=F",
+          "category": "energy",
+          "price": 60.06,
+          "unit": "per unit",
+          "currency": "USD",
+          "change": -0.8299999999999983,
+          "changePercent": -1.3631138117917527,
+          "timestamp": "2025-11-01T00:00:00.000Z",
+          "provider": "alpha_vantage"
+        },
+        {
+          "commodity": "GC=F",
+          "category": "metals",
+          "price": 95.82913112730839,
+          "unit": "per unit",
+          "currency": "USD",
+          "change": -4.170868872691619,
+          "changePercent": -4.170868872691619,
+          "timestamp": "2026-01-07T16:40:49.472Z",
+          "provider": "alpha_vantage"
+        },
+        {
+          "commodity": "SI=F",
+          "category": "metals",
+          "price": 60.06,
+          "unit": "per unit",
+          "currency": "USD",
+          "change": -0.8299999999999983,
+          "changePercent": -1.3631138117917527,
+          "timestamp": "2025-11-01T00:00:00.000Z",
+          "provider": "alpha_vantage"
+        }
+      ]
+    },
+    {
+      "name": "Currency Exchange (USD to SAR)",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": {
+        "fromCurrency": "USD",
+        "toCurrency": "SAR",
+        "rate": 3.75,
+        "change": 0,
+        "changePercent": 0,
+        "timestamp": "2026-01-07T13:40:54.000Z",
+        "provider": "alpha_vantage"
+      }
+    },
+    {
+      "name": "Crypto Prices (Bitcoin, Ethereum)",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": [
+        {
+          "id": "bitcoin",
+          "symbol": "BTC",
+          "name": "Bitcoin",
+          "currentPrice": 91245,
+          "marketCap": 1820966696595,
+          "volume24h": 57843581741,
+          "change24h": -1424.8170337710326,
+          "changePercent24h": -1.53752,
+          "high24h": 93667,
+          "low24h": 91036,
+          "circulatingSupply": 19972765,
+          "totalSupply": 19972765,
+          "lastUpdated": "2026-01-07T16:41:01.547Z",
+          "sparkline7d": [
+            93569.02714900055,
+            93735.10761047016,
+            93211.38105676149,
+            93205.29594070527,
+            93471.19471577024,
+            93537.21080763068,
+            93805.62296229479,
+            93799.13089425345,
+            93698.27670401288,
+            93752.27246303273,
+            93430.07788188591,
+            92619.85345080977,
+            91544.95397613838,
+            91970.9082670331,
+            92063.88548547623,
+            92443.66119430914,
+            93250.31065762376,
+            93215.17913540878,
+            93646.72081123287,
+            92759.09184881274,
+            92383.7070493379,
+            92911.4747991549,
+            92753.6191919218,
+            92604.47600249836,
+            92479.14350146533,
+            92593.31015181929,
+            92820.21928497854,
+            92639.94614308793,
+            91646.63735819007,
+            91889.40064462037
+          ]
+        },
+        {
+          "id": "ethereum",
+          "symbol": "ETH",
+          "name": "Ethereum",
+          "currentPrice": 3159.47,
+          "marketCap": 380524141723,
+          "volume24h": 25735411429,
+          "change24h": -85.70092079188316,
+          "changePercent24h": -2.64088,
+          "high24h": 3295.1,
+          "low24h": 3149.11,
+          "circulatingSupply": 120694785.7441583,
+          "totalSupply": 120694785.7441583,
+          "lastUpdated": "2026-01-07T16:40:52.462Z",
+          "sparkline7d": [
+            3218.269099381697,
+            3240.0293241470063,
+            3218.8715999200044,
+            3218.396475362177,
+            3223.7887308805944,
+            3227.346254050537,
+            3237.9217196364452,
+            3235.6405593520176,
+            3238.104974240745,
+            3275.8895207485507,
+            3265.9936735460624,
+            3244.641895568854,
+            3196.752293062114,
+            3217.5707532162237,
+            3221.453069019834,
+            3239.46301514555,
+            3277.1504415054583,
+            3274.1460800045243,
+            3292.519345496091,
+            3261.8629033752645,
+            3244.182188148317,
+            3269.127835409948,
+            3264.816106522177,
+            3252.5562989721543,
+            3246.670049307805,
+            3248.5646420283647,
+            3253.4602680031358,
+            3253.5248025607584,
+            3199.396220018539,
+            3216.4623484038057
+          ]
+        }
+      ]
+    },
+    {
+      "name": "LPI Data (Middle East)",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": [
+        {
+          "country": "Saudi Arabia",
+          "countryCode": "SAU",
+          "year": 2023,
+          "overallScore": 3.2,
+          "customsScore": 3.0576070495796337,
+          "infrastructureScore": 3.1927306562510225,
+          "internationalShipmentsScore": 3.1640263782455835,
+          "logisticsQualityScore": 3.0880481051513464,
+          "trackingScore": 3.3048368296902795,
+          "timelinessScore": 3.1965507329367226,
+          "rank": 63,
+          "percentile": 36
+        },
+        {
+          "country": "United Arab Emirates",
+          "countryCode": "ARE",
+          "year": 2023,
+          "overallScore": 3.9,
+          "customsScore": 4.015335820539752,
+          "infrastructureScore": 3.7729913697187243,
+          "internationalShipmentsScore": 3.729284151172472,
+          "logisticsQualityScore": 3.9654024874987233,
+          "trackingScore": 3.7378103791509427,
+          "timelinessScore": 3.8401565829701525,
+          "rank": 23,
+          "percentile": 22.000000000000004
+        },
+        {
+          "country": "Kuwait",
+          "countryCode": "KWT",
+          "year": 2023,
+          "overallScore": 3,
+          "customsScore": 2.9621763020526015,
+          "infrastructureScore": 3.076857989507714,
+          "internationalShipmentsScore": 2.8931757949731063,
+          "logisticsQualityScore": 2.9902343836021115,
+          "trackingScore": 3.034498529609052,
+          "timelinessScore": 2.884746872189199,
+          "rank": 59,
+          "percentile": 40
+        },
+        {
+          "country": "Qatar",
+          "countryCode": "QAT",
+          "year": 2023,
+          "overallScore": 3.2,
+          "customsScore": 3.358405664135561,
+          "infrastructureScore": 3.17913938872261,
+          "internationalShipmentsScore": 3.1981053137112645,
+          "logisticsQualityScore": 3.194491058981231,
+          "trackingScore": 3.2860964872017173,
+          "timelinessScore": 3.3461781423575943,
+          "rank": 50,
+          "percentile": 36
+        }
+      ]
+    },
+    {
+      "name": "Supply Chain Impact (FedEx)",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": {
+        "marketSymbol": "FDX",
+        "marketChange": 3.5198,
+        "impactedArea": "transportation",
+        "impactType": "cost",
+        "impactSeverity": "medium",
+        "description": "FDX stock increased by 3.52%, potentially affecting transportation costs.",
+        "recommendations": [
+          "Review transportation budget allocations",
+          "Evaluate alternative carrier options"
+        ],
+        "confidence": 75
+      }
+    },
+    {
+      "name": "Cross-Module Impact Dashboard",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": {
+        "totalImpacts": 0,
+        "byModule": {},
+        "bySeverity": {
+          "low": 0,
+          "medium": 0,
+          "high": 0,
+          "critical": 0
+        },
+        "topRecommendations": []
+      }
+    },
+    {
+      "name": "Real-Time Indices",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": [
+        {
+          "id": "us_cpi",
+          "name": "US Consumer Price Index",
+          "symbol": "CPI",
+          "value": 305.2,
+          "change": 0.9,
+          "changePercent": 0.3,
+          "timestamp": "2026-01-07T16:41:33.450Z",
+          "source": "Estimated",
+          "category": "economic",
+          "supplyChainRelevance": "high"
+        },
+        {
+          "id": "us_ppi",
+          "name": "US Producer Price Index",
+          "symbol": "PPI",
+          "value": 280.5,
+          "change": 0.6,
+          "changePercent": 0.2,
+          "timestamp": "2026-01-07T16:41:33.450Z",
+          "source": "Estimated",
+          "category": "economic",
+          "supplyChainRelevance": "high"
+        },
+        {
+          "id": "pmi_manufacturing",
+          "name": "Manufacturing PMI",
+          "symbol": "PMI",
+          "value": 52.1,
+          "change": 0.8,
+          "changePercent": 1.6,
+          "timestamp": "2026-01-07T16:41:33.450Z",
+          "source": "Estimated",
+          "category": "economic",
+          "supplyChainRelevance": "high"
+        },
+        {
+          "id": "baltic_dry",
+          "name": "Baltic Dry Index",
+          "symbol": "BDI",
+          "value": 1543,
+          "change": 37,
+          "changePercent": 2.4,
+          "timestamp": "2026-01-07T16:41:33.450Z",
+          "source": "Estimated",
+          "category": "freight",
+          "supplyChainRelevance": "high"
+        },
+        {
+          "id": "baltic_capesize",
+          "name": "Baltic Capesize Index",
+          "symbol": "BCI",
+          "value": 2180,
+          "change": 52,
+          "changePercent": 2.4,
+          "timestamp": "2026-01-07T16:41:33.450Z",
+          "source": "Estimated",
+          "category": "freight",
+          "supplyChainRelevance": "high"
+        },
+        {
+          "id": "shanghai_containerized",
+          "name": "Shanghai Containerized Freight Index",
+          "symbol": "SCFI",
+          "value": 1125,
+          "change": -23,
+          "changePercent": -2,
+          "timestamp": "2026-01-07T16:41:33.450Z",
+          "source": "Estimated",
+          "category": "freight",
+          "supplyChainRelevance": "high"
+        }
+      ]
+    },
+    {
+      "name": "Time Series Data (FDX)",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": {
+        "symbol": "FDX",
+        "interval": "daily",
+        "data": [
+          {
+            "timestamp": "2025-12-08T16:41:36.858Z",
+            "open": 169.82844074492115,
+            "high": 170.908021563817,
+            "low": 167.16387991372181,
+            "close": 167.67648345898374,
+            "volume": 8734459
+          },
+          {
+            "timestamp": "2025-12-09T16:41:36.859Z",
+            "open": 171.30359051698406,
+            "high": 174.2664394019467,
+            "low": 168.82403045664282,
+            "close": 173.3904817661887,
+            "volume": 7555510
+          },
+          {
+            "timestamp": "2025-12-10T16:41:36.859Z",
+            "open": 170.44872195920496,
+            "high": 172.860387455476,
+            "low": 166.2729742685634,
+            "close": 168.84457049716448,
+            "volume": 5752813
+          },
+          {
+            "timestamp": "2025-12-11T16:41:36.859Z",
+            "open": 173.899089630604,
+            "high": 175.13590126691446,
+            "low": 173.16197177914992,
+            "close": 174.0274779692602,
+            "volume": 4497444
+          },
+          {
+            "timestamp": "2025-12-12T16:41:36.859Z",
+            "open": 172.94558675975162,
+            "high": 173.83385952328814,
+            "low": 170.261913959459,
+            "close": 171.64899117186258,
+            "volume": 564292
+          },
+          {
+            "timestamp": "2025-12-13T16:41:36.859Z",
+            "open": 173.60029772040951,
+            "high": 176.8243245049042,
+            "low": 171.2970394800721,
+            "close": 174.80687274244966,
+            "volume": 5857917
+          },
+          {
+            "timestamp": "2025-12-14T16:41:36.859Z",
+            "open": 164.3124103805976,
+            "high": 168.1062556286883,
+            "low": 162.71205287518734,
+            "close": 166.4787611526674,
+            "volume": 171763
+          },
+          {
+            "timestamp": "2025-12-15T16:41:36.859Z",
+            "open": 170.6581483951617,
+            "high": 170.66008586707508,
+            "low": 166.2463415153119,
+            "close": 169.15529510811447,
+            "volume": 4533086
+          },
+          {
+            "timestamp": "2025-12-16T16:41:36.859Z",
+            "open": 169.57085221628103,
+            "high": 171.37700432384986,
+            "low": 167.51258271545117,
+            "close": 168.54601872937036,
+            "volume": 3557514
+          },
+          {
+            "timestamp": "2025-12-17T16:41:36.859Z",
+            "open": 167.9742849691874,
+            "high": 168.82076810044867,
+            "low": 166.7876753325426,
+            "close": 167.7633926735465,
+            "volume": 7856900
+          },
+          {
+            "timestamp": "2025-12-18T16:41:36.859Z",
+            "open": 168.46139150381464,
+            "high": 170.6810275539047,
+            "low": 167.4976259361691,
+            "close": 169.89675683450216,
+            "volume": 8996055
+          },
+          {
+            "timestamp": "2025-12-19T16:41:36.859Z",
+            "open": 169.49479090929694,
+            "high": 172.45671757198056,
+            "low": 166.07567913324954,
+            "close": 168.30012197813576,
+            "volume": 5966349
+          },
+          {
+            "timestamp": "2025-12-20T16:41:36.859Z",
+            "open": 164.64215263764433,
+            "high": 167.90944582236563,
+            "low": 163.9937642413876,
+            "close": 165.90422157567198,
+            "volume": 7673645
+          },
+          {
+            "timestamp": "2025-12-21T16:41:36.859Z",
+            "open": 171.72758222316503,
+            "high": 174.99411696055827,
+            "low": 171.046407453471,
+            "close": 173.8218799719146,
+            "volume": 2835308
+          },
+          {
+            "timestamp": "2025-12-22T16:41:36.859Z",
+            "open": 173.06952033040844,
+            "high": 175.37432589561448,
+            "low": 172.03660355463347,
+            "close": 172.17277201566787,
+            "volume": 315807
+          },
+          {
+            "timestamp": "2025-12-23T16:41:36.859Z",
+            "open": 167.60429983267605,
+            "high": 171.404554623282,
+            "low": 165.73116466898549,
+            "close": 168.96078924999543,
+            "volume": 4853185
+          },
+          {
+            "timestamp": "2025-12-24T16:41:36.859Z",
+            "open": 172.95166724300455,
+            "high": 177.54276669687178,
+            "low": 172.54085245708765,
+            "close": 175.32898738804224,
+            "volume": 4066778
+          },
+          {
+            "timestamp": "2025-12-25T16:41:36.859Z",
+            "open": 170.01389331091315,
+            "high": 172.69923657768146,
+            "low": 168.0760476898655,
+            "close": 169.83895281666432,
+            "volume": 9928756
+          },
+          {
+            "timestamp": "2025-12-26T16:41:36.859Z",
+            "open": 169.45529168127695,
+            "high": 169.63463630946563,
+            "low": 166.2320581049462,
+            "close": 168.96161508422708,
+            "volume": 7574961
+          },
+          {
+            "timestamp": "2025-12-27T16:41:36.859Z",
+            "open": 169.86654323521518,
+            "high": 172.37595398404804,
+            "low": 169.11679377081487,
+            "close": 169.20676634841092,
+            "volume": 722454
+          },
+          {
+            "timestamp": "2025-12-28T16:41:36.859Z",
+            "open": 173.20720749581542,
+            "high": 176.13840120519953,
+            "low": 170.60407301996895,
+            "close": 173.53035073980098,
+            "volume": 2057161
+          },
+          {
+            "timestamp": "2025-12-29T16:41:36.859Z",
+            "open": 164.5391507451837,
+            "high": 167.15686228814033,
+            "low": 163.5472854439648,
+            "close": 165.14096613295058,
+            "volume": 9021676
+          },
+          {
+            "timestamp": "2025-12-30T16:41:36.859Z",
+            "open": 167.70515394316212,
+            "high": 168.65636298985856,
+            "low": 165.0683764811841,
+            "close": 166.51876219934786,
+            "volume": 1270304
+          },
+          {
+            "timestamp": "2025-12-31T16:41:36.859Z",
+            "open": 173.87804077431844,
+            "high": 174.2016406187039,
+            "low": 170.17649930933484,
+            "close": 172.9666628181737,
+            "volume": 77707
+          },
+          {
+            "timestamp": "2026-01-01T16:41:36.859Z",
+            "open": 171.28063328929946,
+            "high": 173.3016696209039,
+            "low": 170.9289374581308,
+            "close": 173.04301472974146,
+            "volume": 3261567
+          },
+          {
+            "timestamp": "2026-01-02T16:41:36.859Z",
+            "open": 169.92470332382928,
+            "high": 175.0199330530018,
+            "low": 168.496841729546,
+            "close": 172.37604760173207,
+            "volume": 5392266
+          },
+          {
+            "timestamp": "2026-01-03T16:41:36.859Z",
+            "open": 173.74541963201224,
+            "high": 177.7479422425454,
+            "low": 172.90212761893576,
+            "close": 175.08412787635768,
+            "volume": 440169
+          },
+          {
+            "timestamp": "2026-01-04T16:41:36.859Z",
+            "open": 172.90772469839706,
+            "high": 175.2406924933206,
+            "low": 170.79208755035094,
+            "close": 174.31013142915032,
+            "volume": 3363884
+          },
+          {
+            "timestamp": "2026-01-05T16:41:36.859Z",
+            "open": 173.54230018171714,
+            "high": 176.40765807740073,
+            "low": 171.92384162432413,
+            "close": 173.42851476833545,
+            "volume": 1954564
+          },
+          {
+            "timestamp": "2026-01-06T16:41:36.859Z",
+            "open": 174.27725435023305,
+            "high": 177.17676449009895,
+            "low": 172.20041813107434,
+            "close": 174.62307594576794,
+            "volume": 9078862
+          },
+          {
+            "timestamp": "2026-01-07T16:41:36.859Z",
+            "open": 166.64485347364743,
+            "high": 169.43417443868694,
+            "low": 164.83859043679965,
+            "close": 167.43449490549503,
+            "volume": 2626768
+          }
+        ],
+        "metadata": {
+          "lastRefreshed": "2026-01-07T16:41:36.859Z",
+          "timezone": "US/Eastern",
+          "outputSize": "compact"
+        }
+      }
+    },
+    {
+      "name": "Symbol Search (FedEx)",
+      "status": "pass",
+      "message": "Success! Data received",
+      "details": {
+        "results": []
+      }
+    }
+  ]
+}

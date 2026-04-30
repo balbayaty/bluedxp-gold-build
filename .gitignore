@@ -1,0 +1,237 @@
+# ============================================================================
+# HAZALYZE PLATFORM - ENTERPRISE .GITIGNORE
+# Billion-Dollar App - Maximum Security & Clean Codebase
+# ============================================================================
+
+# ============================================================================
+# CRITICAL: SECRETS & CREDENTIALS (NEVER COMMIT THESE!)
+# ============================================================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env
+.envrc
+secrets/
+.secrets/
+**/secrets.json
+**/credentials.json
+**/api-keys.json
+**/*secret*
+**/*key*.json
+**/*password*.json
+**/*token*.json
+**/config/secrets.*
+**/config/credentials.*
+
+# API Keys & Credentials
+# NOTE: Avoid overly-broad patterns (e.g. `**/*auth*`) because they can hide legitimate code
+# directories like `authorities/` and lead to accidental cleanup or missing files.
+# Keep this list focused on known secret file types and locations above.
+
+# Documentation that might contain secrets
+FOUND_API_KEYS.md
+API_KEYS_AUDIT_REPORT.md
+**/*SECRET*.md
+**/*KEY*.md
+**/*PASSWORD*.md
+
+# ============================================================================
+# NODE.JS & DEPENDENCIES
+# ============================================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+lerna-debug.log*
+# Lockfiles:
+# - We DO commit the lockfile for the package manager we use (npm => package-lock.json).
+# - Avoid generating multiple lockfiles at once; if you switch package managers, update this section.
+yarn.lock
+pnpm-lock.yaml
+.npm
+.eslintcache
+
+# ============================================================================
+# NEXT.JS BUILD OUTPUT
+# ============================================================================
+.next/
+out/
+dist/
+build/
+.vercel/
+.vercel/*
+.vercelignore
+.next/cache/
+.next/server/
+.next/static/
+
+# ============================================================================
+# TYPESCRIPT
+# ============================================================================
+*.tsbuildinfo
+next-env.d.ts
+*.d.ts.map
+
+# ============================================================================
+# TESTING & COVERAGE
+# ============================================================================
+coverage/
+.nyc_output/
+*.test.js.snap
+.jest/
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ============================================================================
+# IDE & EDITOR FILES
+# ============================================================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================================================
+# OPERATING SYSTEM FILES
+# ============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# ============================================================================
+# LOGS & TEMPORARY FILES
+# ============================================================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+tmp/
+temp/
+*.tmp
+*.temp
+.cache/
+.parcel-cache/
+
+# ============================================================================
+# MEDIA & ASSETS (Large Files - Use Git LFS if Needed)
+# ============================================================================
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.wmv
+video-screenshots/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+!public/**/*.png
+!public/**/*.jpg
+!public/**/*.jpeg
+!public/**/*.svg
+!public/**/*.gif
+!public/**/*.webp
+
+# ============================================================================
+# DATABASE FILES
+# ============================================================================
+*.db
+*.sqlite
+*.sqlite3
+*.sql
+data/*.db
+data/*.sqlite
+
+# ============================================================================
+# BACKUP & ARCHIVE FILES
+# ============================================================================
+*.bak
+*.backup
+*.old
+*~
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# ============================================================================
+# LOCAL DEVELOPMENT
+# ============================================================================
+.local/
+local/
+.localhost/
+*.local
+
+# ============================================================================
+# DEPLOYMENT & INFRASTRUCTURE
+# ============================================================================
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+docker-compose.override.yml
+.k8s/
+helm-charts/charts/
+
+# ============================================================================
+# MONITORING & ANALYTICS (May Contain Sensitive Data)
+# ============================================================================
+.sentry/
+.sentryclirc
+*.prof
+*.cpuprofile
+*.heapsnapshot
+
+# ============================================================================
+# MISC
+# ============================================================================
+*.pem
+*.key
+*.cert
+*.crt
+*.p12
+*.pfx
+*.jks
+*.keystore
+
+# ============================================================================
+# GENERATED REPORTS / EXPORTS (keep workspace fast)
+# ============================================================================
+archive/
+chatgpt-export/
+gap-analysis-results/
+# DO NOT use a bare `audit/` here -- it silently excludes lib/services/audit/
+# (which broke production at b1dc888b). Keep this scoped to the project root only.
+/audit/
+docs/ARCHIVE/
+
+# Build test additions
+BUILD*.log
+BUILD*.pid
+*.bak.*
+.env.local.bak.*
+all_pages.txt
+PAGE_NAVIGATOR.html
+mind-blowing.html
+FAILING_ROUTES.txt
